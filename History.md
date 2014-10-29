@@ -1,4 +1,18 @@
 
+0.8.24a / 2014-10-29
+==================
+
+ * Fix clumsy design #32
+ * Fix loading lock setting locked .site-content to 100% height as now it has a relative position. Closes #40
+ * Added law progress bar
+ *  Add new logo for DEMOS. LOGO env variable should point to /lib/boot/images/logo.svg instead of /lib/boot/images/logo.png. Closes #35
+ * Add link to authorUrl in their picture. Fix main-content height for mobile
+ * Set fixed height to main-content bill container #32
+ * Add padding between box and bottom div #32
+ * Fix layout rendering and set max length 300 for summary #32
+ * Add link to democracyos website and fix footer position #34
+ * Starting with the footer. Missing deeply testing and correct reubication at the bottom of the page
+
 0.8.24 / 2014-10-22
 ==================
 
