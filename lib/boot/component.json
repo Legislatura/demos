@@ -30,7 +30,8 @@
     "logout",
     "help",
     "bill-proposal-demo",
-    "404"
+    "404",
+    "summary"
   ],
   "scripts": [ "boot.js" ],
   "styles": [ "boot.styl", "boot-responsive.styl" ],
