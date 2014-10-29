@@ -1,0 +1,19 @@
+{
+  "name": "footer",
+  "description": "footer component",
+  "dependencies": {
+    "component/bus": "0.0.2",
+    "component/dom": "0.7.1"
+    },
+  "scripts": [
+    "footer.js",
+    "view.js"
+  ],
+  "locals": [
+    "view"
+  ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "images": ["images/powered-by-dos.svg"],
+  "main": "footer.js"
+}

@@ -1,0 +1,8 @@
+#projects.inner-container
+  h1=t('projects.title.1')
+  p=t('projects.paragraph.1.1')
+  p=t('projects.paragraph.1.2')
+  h2=t('projects.title.2')
+  ul.projects-container
+    - each project in projects
+      li.project: a(href='/law/#{project.id}')=project.mediaTitle
