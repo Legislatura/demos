@@ -1,35 +1,18 @@
-@import 'kouto-swiss'
-
-/**
- * Bill Proposal - Mobile version
- */
+@import kouto-swiss
 
 .bill-proposal
-  font-size 10px
+  clearfix()
+  margin-bottom 1em
+  padding 1em
+  border-radius 3px
+  background-color #ebeff0
+  padding-bottom 3em
+  height 359px
+  overflow hidden
 
-  .main-content
-    clearfix()
-    margin-bottom 1em
-    padding 1em
-    border-radius 3px
-    background-color #ebeff0
-    padding-bottom 3em
-    height 359px
-    overflow hidden
-
-    @media screen and (max-width 700px)
-      height auto
-      overflow auto
-
-  h1, h2
-    margin 0 0 .7em
-    padding 1em .5em
-    font-size 1.9em
-    font-weight 900
-    text-align center
-    text-transform uppercase
-    border-top-left-radius 3px
-    border-top-right-radius 3px
+  @media screen and (max-width 700px)
+    height auto
+    overflow auto
 
   h1
     margin 0
@@ -209,45 +192,25 @@
       &:after
         background-color #ECF0F1
 
+// #bill-proposal-demo-index
+//   margin: 0 auto
+//   padding: 2em 0
+//   max-width: 1024px
 
-bill-proposal-big()
-  .bill-proposal
-    .author-wrapper
-      text-align center
+//   .bill-proposal
+//     float: left
+//     width: 100%
+//     max-width: 32%
+//     margin-right: 2%
 
-    .pic
-      float left
-      width 45%
-      margin-right 5%
-      width calc('50% - 1em', 48%)
-      margin-right calc(1em)
+//     &:last-child
+//       margin-right: 0
 
-    .desc
-      position relative
-      top -.3em
 
-    .score-selector
-      margin-left 10em
-      margin-right 10em
-      height 11em
+// #bill-proposal-demo-show
+//   margin: 0 auto
+//   padding: 2em 0
+//   max-width: 980px
 
-    .prev,
-    .next
-      position absolute
-      top 0
-      padding 8em 0 0 0
-      width 9em
-      height 11em
-      float none
-      background-position center 25%
-      span
-        line-height 1
-
-    .prev
-      left 0
-
-    .next
-      right 0
-
-@media screen and (min-width 600px)
-  bill-proposal-big()
+//   @media screen and (min-width: 600px)
+//     bill-proposal-big()

@@ -6,6 +6,9 @@
     "jfresco/progress": "*"
   },
   "locals": [
+    "bill-proposal",
+    "citizen",
+    "laws",
     "view"
   ],
   "styles": [
