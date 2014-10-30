@@ -9,6 +9,8 @@
 #bill-proposal-demo-show
   article.bill-proposal
     h1=t('global.title')
+    h2.subtitle!=t('global.subtitle')
+      a.read-more(href='/acerca-de')=t('read more')
     div.progress-container
     .main-content
       h2(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
