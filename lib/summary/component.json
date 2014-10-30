@@ -2,11 +2,13 @@
   "name": "summary",
   "dependencies": {
     "visionmedia/page.js": "1.3.7",
-    "component/bus": "0.0.2"
+    "component/bus": "0.0.2",
+    "component/t": "1.0.0",
+    "component/indexof": "0.0.1"
   },
   "scripts": ["summary.js", "view.js"],
   "main": "summary.js",
   "styles": ["summary.styl"],
   "templates": ["template.jade"],
-  "locals": ["view", "title"]
+  "locals": ["view", "title", "config", "laws"]
 }
