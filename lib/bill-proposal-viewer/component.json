@@ -1,0 +1,17 @@
+{
+  "name": "bill-proposal-viewer",
+  "description": "",
+  "dependencies": {
+    "component/dom": "0.7.1",
+    "jfresco/progress": "*"
+  },
+  "locals": [
+    "view"
+  ],
+  "styles": [
+    "styles.styl"
+  ],
+  "scripts": [ "view.js" ],
+  "templates": [ "template.jade" ],
+  "main": "view.js"
+}
