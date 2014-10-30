@@ -394,5 +394,8 @@
   "scoring.value.somewhat": "Este proyecto te interesa <strong>algo</strong>",
   "scoring.value.very": "Este proyecto te interesa <strong>mucho</strong>",
 
-  "footer.using-technology-from": "con tecnología de"
+  "footer.using-technology-from": "con tecnología de",
+
+  "summary.title": "¡Gracias por sumar tu opinión!",
+  "summary.subtitle": "Tu opinión vale"
 }

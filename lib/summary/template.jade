@@ -1,0 +1,69 @@
+#summary-container
+  h1=t('summary.title')
+  h3=t('summary.subtitle')
+  .share-links.col-md-8.col-md-offset-2
+    .col-md-4.text-right
+      a(target="_blank", href="http://www.facebook.com/sharer.php?u=#{baseUrl}/summary").flaticon.social.facebook
+      a(target="_blank", href="http://twitter.com/share?text=#{t('summary.twitter-share-text')}&url=#{baseUrl}/summary").flaticon.social.twitter
+      a(target="_blank", href="https://plus.google.com/share?url=#{baseUrl}/summary").flaticon.social.google-plus
+    .col-md-4.text-left.share-message #{t('summary.social')}
+  .laws.col-md-12
+    - var index = 0
+    each law in laws
+      - index++
+      - var style = index % 3 ? 'column-left' : (index % 2 ? 'column-center' : 'column-right')
+      - var nothings = law.nothings || []
+      - var littles = law.littles || []
+      - var somewhats = law.somewhats || []
+      - var verys = law.verys || []
+      - var census = nothings.concat(littles).concat(somewhats).concat(verys)
+
+      - var scored = citizen.id && ~census.indexOf(citizen.id)
+
+      article.bill-proposal.col-md-4
+        .main-content
+          h2(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
+          .author-wrapper
+            .author
+              a(href='#{law.authorUrl}', target='_blank')
+                img(src=law.authorPictureUrl)
+              p
+                span=t('admin-laws-form.label.author') + ': '
+                a(href=law.authorUrl, target='_blank')=law.author
+              p
+                span=t('admin-laws-form.label.party') + ': '
+                a(href=law.partyUrl, target='_blank')=law.party
+
+          - if (law.picture)
+            .pic(style="background-image: url(#{law.picture})")
+              span
+
+          p.desc=law.summary
+
+          a.link(href=law.source, target='_blank')=t('View the original text')
+
+        .actions
+          .score-selector
+            .scored.text-center(class=!scored ? 'hide' : '')
+              - var title = ''
+              - if (~nothings.indexOf(citizen.id))
+                - var title = 'scoring.value.nothing'
+              - if (~littles.indexOf(citizen.id))
+                - var title = 'scoring.value.little'
+              - if (~somewhats.indexOf(citizen.id))
+                - var title = 'scoring.value.somewhat'
+              - if (~verys.indexOf(citizen.id))
+                - var title = 'scoring.value.very'
+              h2.title!=t(title)
+              a.change-score.btn.btn-info(href='#')=t('scoring.options.change-score')
+            .scores(class=scored ? 'hide' : '')
+              h2=t('scoring.options.title')
+              ul
+                li.score.score-nothing
+                  span=t('scoring.options.nothing')
+                li.score.score-little
+                  span=t('scoring.options.little')
+                li.score.score-somewhat
+                  span=t('scoring.options.somewhat')
+                li.score.score-very
+                  span=t('scoring.options.very')
