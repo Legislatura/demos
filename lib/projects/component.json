@@ -10,6 +10,7 @@
     "laws",
     "view"
   ],
+  "images": [ "images/cover.jpg" ],
   "scripts": [ "projects.js", "view.js" ],
   "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
