@@ -3,7 +3,8 @@
   "description": "",
   "dependencies": {
     "component/dom": "0.7.1",
-    "jfresco/progress": "*"
+    "jfresco/progress": "*",
+    "tomerdmnt/carousel-slide": "*"
   },
   "locals": [
     "bill-proposal",
