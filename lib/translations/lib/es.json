@@ -4,6 +4,8 @@
   "common.cancel": "Cancelar",
   "common.back": "Volver",
   "common.skip": "Saltear",
+  "common.prev": "Anterior",
+  "common.next": "Siguiente",
 
   "DemocracyOS": "DemocracyOS",
   "header.logo": "demOS",
