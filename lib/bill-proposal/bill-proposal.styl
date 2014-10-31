@@ -5,21 +5,19 @@
  */
 
 .bill-proposal
+  clearfix()
   font-size 10px
+  margin-bottom 1em
+  padding 1em
+  border-radius 3px
+  background-color #ebeff0
+  padding-bottom 3em
+  height 359px !important
+  overflow hidden
 
-  .main-content
-    clearfix()
-    margin-bottom 1em
-    padding 1em
-    border-radius 3px
-    background-color #ebeff0
-    padding-bottom 3em
-    height 359px
-    overflow hidden
-
-    @media screen and (max-width 700px)
-      height auto
-      overflow auto
+  @media screen and (max-width 700px)
+    height auto
+    overflow auto
 
   h1, h2
     margin 0 0 .7em
@@ -104,7 +102,7 @@
     text-decoration none
     border-bottom 1px solid transparent
     transition all .1s ease-in
-    background url('/lib/bill-proposal-demo/images/clip.svg') no-repeat left .3em
+    background url('/lib/bill-proposal/images/clip.svg') no-repeat left .3em
     &:hover
       color #333
       border-bottom 1px solid #666
@@ -135,13 +133,13 @@
     float left
     padding-left 0 0 0 5%
     background-position 10% center
-    background-image url('/lib/bill-proposal-demo/images/prev.svg')
+    background-image url('/lib/bill-proposal/images/prev.svg')
 
   .next
     float right
     padding 0 5% 0 0
     background-position 90% center
-    background-image url('/lib/bill-proposal-demo/images/next.svg')
+    background-image url('/lib/bill-proposal/images/next.svg')
 
   .scoring-nav-disabled
     background-image none

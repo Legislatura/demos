@@ -4,38 +4,47 @@
 
   h1
     text-transform uppercase
-  .score-selector
-    margin-right 0px
-    margin-left 0px
+  .bill-proposal
+    .inner
+      height 479px !important
+      .author
+        font-size .8em
+      .desc
+        font-size 1.2em
+      .pic
+        width 100%
+        margin-bottom 1em
+      .link
+        background url("/lib/bill-proposal-demo/images/clip.svg") no-repeat left 0.6em
+        padding-left 1.7em
+    .actions
+      display none
 
-.scoring-nav-disabled
-    display none
-
-.share-links
-  margin-top 20px
-  margin-bottom 40px
-  a
-    background #ccc
-    padding 10px
-    margin-right 10px
-    border-radius border_radius
-    color white
-    display inline-block
-    line-height 10px
-    -webkit-transition all 0.3s ease
-    &:hover
+  .share-links
+    margin-top 20px
+    margin-bottom 40px
+    a
+      background #ccc
+      padding 10px
+      margin-right 10px
+      border-radius border_radius
       color white
-      text-decoration none
-    &.facebook:hover
-      background #3b5998
-    &.twitter:hover
-      background #3498db
-    &.google-plus:hover
-      background #c0392b
+      display inline-block
+      line-height 10px
+      -webkit-transition all 0.3s ease
+      &:hover
+        color white
+        text-decoration none
+      &.facebook:hover
+        background #3b5998
+      &.twitter:hover
+        background #3498db
+      &.google-plus:hover
+        background #c0392b
 
-.share-message
-  color #ccc
-  font-weight bold
+  .share-message
+    color #ccc
+    font-weight bold
 
 #browser
   overflow hidden
