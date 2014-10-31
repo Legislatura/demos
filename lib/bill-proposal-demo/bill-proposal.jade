@@ -59,9 +59,9 @@
             li.score.score-very
               span=t('scoring.options.very')
 
-      - if (previousLaw)
-        .prev
+      .prev(class=previousLaw ? '' : 'scoring-nav-disabled')
+        - if (previousLaw)
           span=t('common.back')
-      - if (nextLaw)
-        .next
+      .next(class=nextLaw ? '' : 'scoring-nav-disabled')
+        - if (nextLaw)
           span=t('common.skip')
