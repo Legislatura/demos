@@ -1,6 +1,7 @@
 @import kouto-swiss
 
 .bill-proposal
+  height auto !important
   &.carousel-prev
     left: -200%;
   &.carousel-next
@@ -12,13 +13,6 @@
     padding 1em
     border-radius 3px
     background-color #ebeff0
-    padding-bottom 3em
-    height 359px !important
-    overflow hidden
-
-    @media screen and (max-width 700px)
-      height auto
-      overflow auto
 
     h1, h2
       margin 0 0 .7em
@@ -48,36 +42,38 @@
         display inline-block
         margin-left 3px
 
-    .author
-      display inline-block
-      position relative
-      margin 0 0 1.8em
-      padding-left 3.6em
-      img
+    .author-wrapper
+      text-align center
+      .author
         display inline-block
-        position absolute
-        left 0
-        top 50%
-        margin-top -1.5em
-        width 3em
-        height 3em
-        border-radius 100%
-      p
-        display inline-block
-        font-size 1.3em
-        margin 0
-        &:after
-          content '\00a0\00a0/\00a0\00a0'
-        &:last-child:after
-          content ''
-        a
-          color #000
-          text-decoration none
-          border-bottom 1px solid transparent
-          transition all .1s ease-in
-          &:hover
-            color #333
-            border-bottom 1px solid #666
+        position relative
+        margin 0 0 1.8em
+        padding-left 3.6em
+        img
+          display inline-block
+          position absolute
+          left 0
+          top 50%
+          margin-top -1.5em
+          width 3em
+          height 3em
+          border-radius 100%
+        p
+          display inline-block
+          font-size 1.3em
+          margin 0
+          &:after
+            content '\00a0\00a0/\00a0\00a0'
+          &:last-child:after
+            content ''
+          a
+            color #000
+            text-decoration none
+            border-bottom 1px solid transparent
+            transition all .1s ease-in
+            &:hover
+              color #333
+              border-bottom 1px solid #666
 
     .pic
       position relative
@@ -213,9 +209,6 @@
 
 bill-proposal-big()
   .bill-proposal
-    .author-wrapper
-      text-align center
-
     .pic
       float left
       width 45%
