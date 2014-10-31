@@ -63,7 +63,7 @@
             option(selected= law.tag ? tag.hash === law.tag.hash : false, value=tag.hash)= tag.name
       .form-group
         label= t('admin-laws-form.label.summary')
-        textarea.form-control(name='summary', tabindex=15, validate='required max-length:300')= law.summary
+        textarea.form-control(name='summary', tabindex=15, validate='required max-length:350')=law.summary
       .form-group.closingAt
         label= t('admin-laws-form.label.closingAt')
         - var closingAt = ''
