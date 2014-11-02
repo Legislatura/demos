@@ -19,6 +19,10 @@
         p
           span=t('admin-laws-form.label.party') + ': '
           a(href=law.partyUrl, target='_blank')=law.party
+        p
+          - var tweet = law.mediaTitle + ' de ' + law.author
+          - tweet = '%23YoVoto ' + encodeURI(tweet)
+          a(target="_blank", href="http://twitter.com/share?text=#{tweet}")=t('bill-proposal.talk-to-the-author')
 
     - if (law.picture)
       .pic(style="background-image: url(#{law.picture})")
