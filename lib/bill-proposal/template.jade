@@ -8,7 +8,7 @@
 
 .bill-proposal(data-id=law.id)
   .inner
-    h2(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
+    h2.law-title(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
     .author-wrapper
       .author
         a(href='#{law.authorUrl}', target='_blank')
