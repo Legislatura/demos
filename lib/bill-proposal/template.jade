@@ -21,7 +21,7 @@
           a(href=law.partyUrl, target='_blank')=law.party
     - var tweet = law.mediaTitle + ' de ' + law.author
     - tweet = '%23YoVoto ' + encodeURI(tweet)
-    a.btn.btn-info.btn-talk(target="_blank", href="http://twitter.com/share?text=#{tweet}")=t('bill-proposal.talk-to-the-author')
+    a.flaticon.social.twitter.btn.btn-link(target="_blank", href="http://twitter.com/share?text=#{tweet}")=t('bill-proposal.talk-to-the-author')
 
     - if (law.picture)
       .pic(style="background-image: url(#{law.picture})")
