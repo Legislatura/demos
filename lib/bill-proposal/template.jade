@@ -6,7 +6,7 @@
 
 - var scored = citizen.id && ~census.indexOf(citizen.id)
 
-.bill-proposal
+.bill-proposal(data-id=law.id)
   .inner
     h2(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
     .author-wrapper
