@@ -214,7 +214,7 @@
   "Chart": "Gráfico",
 
   "Clause": "Artículo",
-  "read more": "Leer más",
+  "read more": "Más información",
   "view more": "ver más",
   "View the original text": "Ver el texto original",
   "Participant": "Participante",
@@ -369,7 +369,7 @@
   "side-comments.confirmation.title": "Eliminar comentario",
 
   "global.title": "¿Qué leyes querés que debatamos?",
-  "global.subtitle": "Calificá los proyectos. A partir del 12 de noviembre debatiremos entre todos los 3 proyectos más valorados.<br/>Tu opinión vale, ahora vamos a poder comunicarnos usando la Red.",
+  "global.subtitle": "Calificá los proyectos. A partir del 12 de noviembre debatiremos entre todos los 3 proyectos más valorados.",
   "global.non-compatible.text": "Tu navegador es poco feliz, por favor actualízalo o utiliza la última versión de <a href=\"http://www.google.com/chrome/\" target=\"_blank\">Google Chrome</a> o <a href=\"https://www.mozilla.org/en-US/firefox/new/\" target=\"_blank\">Mozilla Firefox</a>",
 
   "about.title.1": "¿Qué es DEMOS?",
@@ -400,7 +400,9 @@
 
   "footer.using-technology-from": "con tecnología de",
 
+  "bill-proposal.talk-to-the-author": "Comunicate con el autor",
+
   "summary.title": "¡Gracias por sumar tu opinión!",
-  "summary.subtitle": "Tu opinión vale",
-  "summary.social": "Contale a tus amigos"
+  "summary.subtitle": "Calificá los proyectos. A partir del 12 de noviembre debatiremos, entre todos, los 3 más valorados.<br />Tu opinión vale, ahora vamos a poder comunicarnos usando la Red.",
+  "summary.social": "Compartí esta iniciativa con tus amigos, así todos pueden opinar!"
 }
