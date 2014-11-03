@@ -61,12 +61,17 @@
         display inline-block
         margin-left 3px
 
+    .flaticon.social
+      display block
+      text-transform inherit
+      margin-bottom 3px
+
     .author-wrapper
       text-align center
       .author
         display inline-block
         position relative
-        margin 0 0 1.8em
+        margin 0
         padding-left 3.6em
         img
           display inline-block
@@ -93,6 +98,15 @@
             &:hover
               color #333
               border-bottom 1px solid #666
+
+    .btn-talk
+      display block
+      margin 1em auto
+      width 25%
+      @media screen and (max-width 960px)
+        width 35%
+      @media screen and (max-width 700px)
+        width 75%
 
     .pic
       position relative
