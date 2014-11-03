@@ -19,9 +19,15 @@
         p
           span=t('admin-laws-form.label.party') + ': '
           a(href=law.partyUrl, target='_blank')=law.party
-    - var tweet = law.mediaTitle + ' de ' + law.author
-    - tweet = '%23YoVoto ' + encodeURI(tweet)
-    a.flaticon.social.twitter.btn.btn-link(target="_blank", href="http://twitter.com/share?text=#{tweet}")=t('bill-proposal.talk-to-the-author')
+    - var isTwitter = !!~law.authorUrl.indexOf('twitter.com')
+    - if (isTwitter)
+      - var twitter = law.authorUrl.split('twitter.com/')[1]
+      - var tweet = 'Hola @' + twitter + '! Quiero decirte algo sobre tu proyecto '
+      - tweet = '%23YoVoto ' + encodeURI(tweet)
+      - var url = 'http://twitter.com/share?text=' + tweet
+    - else
+      - var url = law.authorUrl
+    a.flaticon.social.btn.btn-link(target="_blank", href=url, class= isTwitter ? 'twitter' : '')=t('bill-proposal.talk-to-the-author')
 
     - if (law.picture)
       .pic(style="background-image: url(#{law.picture})")
