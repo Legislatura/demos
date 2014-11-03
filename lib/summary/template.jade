@@ -3,12 +3,13 @@
   .col-md-12
     .row
       h1=t('summary.title')
-    .row
+    .row.hidden-sm.hidden-xs
       h4!=t('summary.subtitle')
-  .share-links.col-md-8.col-md-offset-2
-    .col-md-4.text-right
+  .col-md-4
+  .share-links.col-sm-12.text-center
+    .col-xs-12.col-md-2.col-sm-2.col-md-offset-4.text-center
       a(target="_blank", href="http://www.facebook.com/sharer.php?u=#{baseUrl}").flaticon.social.facebook
       a(target="_blank", href="http://twitter.com/share?text=#{t('summary.share-text')}&url=#{baseUrl}").flaticon.social.twitter
       a(target="_blank", href="https://plus.google.com/share?url=#{baseUrl}").flaticon.social.google-plus
-    .col-md-4.text-left.share-message #{t('summary.social')}
+    .hidden-sm.hidden-xs.col-md-3.text-left.share-message #{t('summary.social')}
   .laws.col-md-12
