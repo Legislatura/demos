@@ -7,24 +7,15 @@
     left: -200%;
   &.carousel-next
     left: 200%;
-  &:first-child
-    .prev
-      background-image none
-      &:hover
-        background-color #c9d1d3
-        cursor default
+  &:first-child .prev,
+  &:last-child .next
+    background-image none
+    &:hover
+      background-color #c9d1d3
+      cursor default
 
-      span
-        display none
-  &:last-child
-    .next
-      background-image none
-      &:hover
-        background-color #c9d1d3
-        cursor default
-
-      span
-        display none
+    span
+      color #c9d1d3
 
   .inner
     clearfix()
