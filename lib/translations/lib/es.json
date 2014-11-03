@@ -370,7 +370,7 @@
 
   "global.title": "¿Qué leyes querés que debatamos?",
   "global.subtitle": "Calificá los proyectos. A partir del 12 de noviembre debatiremos entre todos los 3 proyectos más valorados.<br/>Tu opinión vale, ahora vamos a poder comunicarnos usando la Red.",
-  "global.non-compatible.text": "Tu navegador no es soportado, por favor actualízalo o utiliza la última versión de <a href=\"http://www.google.com/chrome/\" taget=\"_blank\">Chrome</a> o <a href=\"https://www.mozilla.org/en-US/firefox/new/\" taget=\"_blank\">Firefox</a>",
+  "global.non-compatible.text": "Tu navegador es poco feliz, por favor actualízalo o utiliza la última versión de <a href=\"http://www.google.com/chrome/\" target=\"_blank\">Google Chrome</a> o <a href=\"https://www.mozilla.org/en-US/firefox/new/\" target=\"_blank\">Mozilla Firefox</a>",
 
   "about.title.1": "¿Qué es DEMOS?",
   "about.paragraph.1.1": "DEMOS, desarrollado por Democracia en Red con el apoyo de la Legislatura Porteña, es un proyecto diseñado para introducir nuevos mecanismos de participación ciudadana en la Legislatura y, así, generar mayor conciencia cívica entre los ciudadanos.",
