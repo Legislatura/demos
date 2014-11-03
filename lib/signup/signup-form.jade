@@ -57,5 +57,8 @@
   #signup-message.hide
     h1 Welcome
     p.lead.text-muted #{t('Your sign up data was received. We sent you an email so you can validate your email address.')}.
-    p.lead.text-muted= t('Please check your email (remember to check your spam folder too) and click on the link supplied on the email.')
+    p.lead.text-muted= t('signup-form.message.2')
+    a(href='mailto:demos@legislatura.gob.ar')= 'Contactanos'
+    br
+    br
     a(href='/signup/resend-validation-email')= t('Resend validation email')
