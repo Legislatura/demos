@@ -30,7 +30,8 @@
     "logout",
     "help",
     "404",
-    "summary"
+    "summary",
+    "non-compatible-browsers"
   ],
   "scripts": [ "boot.js" ],
   "styles": [ "boot.styl", "boot-responsive.styl" ],

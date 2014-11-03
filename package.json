@@ -74,7 +74,8 @@
     "builder-jade": "1.0.1",
     "stylus": "0.48.1",
     "recaptcha": "1.2.0",
-    "kouto-swiss": "0.10.3"
+    "kouto-swiss": "0.10.3",
+    "ua-parser": "0.3.3"
   },
   "devDependencies": {},
   "main": "pdr",
