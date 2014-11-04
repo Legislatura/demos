@@ -19,3 +19,5 @@ public
 
 *.DS_Store
 config*.json
+.idea
+.tmp

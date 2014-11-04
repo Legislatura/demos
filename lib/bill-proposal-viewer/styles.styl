@@ -1,0 +1,56 @@
+@import 'kouto-swiss'
+
+/**
+ * Bill Proposal - Mobile version
+ */
+
+.bill-proposal-viewer
+  font-family: 'Raleway', sans-serif
+  font-kerning: normal
+  padding 2em 0
+  margin 0 auto
+  max-width 980px
+
+  h1.title,
+  h2.subtitle
+    margin 0
+    padding 0
+    text-align center
+    text-transform uppercase
+
+  h1.title
+    font-size 1.9em
+    margin 0
+    padding 0
+    padding-top 0
+
+  h2.subtitle
+    font-size 1em
+    font-weight normal
+    margin 1.4em auto
+
+    a.read-more
+      color #333
+      display inline-block
+      margin-left 3px
+
+  .progress-container
+    width 25%
+    margin-left auto
+    margin-right auto
+
+    @media screen and (max-width: 700px)
+      width 75%
+
+  .progress
+    overflow visible
+
+  .progress-indicator
+    opacity 1
+
+  .progress-caption
+    right -45px
+    top -11px
+    font-size 16px
+    color #4d4d4d
+    font-weight bold

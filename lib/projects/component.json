@@ -1,0 +1,18 @@
+{
+  "name": "projects",
+  "description": "projects page",
+  "dependencies": {
+    "component/bus": "^0.0.2",
+    "component/dom": "0.7.1",
+    "visionmedia/page.js": "1.3.7"
+  },
+  "locals": [
+    "laws",
+    "view"
+  ],
+  "images": [ "images/cover.jpg" ],
+  "scripts": [ "projects.js", "view.js" ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "projects.js"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "how-it-works",
+  "description": "how it works popover, for the first time",
+  "dependencies": {
+    "component/dom": "0.7.1",
+    "visionmedia/debug": "0.7.4",
+    "component/popover": "1.1.0",
+    "component/cookie": "1.0.1",
+    "ripplejs/ripple": "0.5.3",
+    "visionmedia/page.js": "1.3.7",
+    "component/t": "1.0.0"
+  },
+  "scripts": [
+    "view.js"
+  ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "view.js"
+}

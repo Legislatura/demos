@@ -1,4 +1,366 @@
 
+0.8.24d / 2014-11-04
+==================
+
+ * Update language files for login and 'Quiero cambiar mi califiación' translations. Fix bug on summary not rendering the change vote box
+ * Fixed next law delay in Summary view. Closes #75
+ * Add switchOff on BillProposalViewer. Closes #76
+
+0.8.24c / 2014-11-04
+==================
+
+ * Fix styles on /gracias page. Closes #74
+ * Decreased font size of score text in Summary
+ * Deleted forgotten debugger;
+ * Fixed scroll to top when changing score
+ * Fixed law score status lazy loading. Closes #74
+ * Fix some texts #71
+ * Fixed social buttons alignment. Closes #72
+ * Remove score from other arrays when changing score and push it to the corresponding array. Closes #73
+ * Fixed Summary sharing buttons position
+ * Fixed image alignment in Summary. Closes #25
+ * Fix setting progress to over 100% or less than 0%
+ * Fix prev and next navigation buttons on mobile and setting progress to an over 100% or fewer than %0. Closes #66
+ * Add final texts. Closes #71
+ * Scoring controls are visible in summary view
+ * Fix showing score when law is not voted
+ * Fix redirect to /gracias when logged in and all bills are scored
+ * fix reloading laws on signin/signout. Closes #65
+ * Fix issue when all bills are voted #64
+ * Fixed scroll issue when navigating. Closes #69.
+ * Fix progress bar. Closes #64
+ * Fixed font styles. Closes #61.
+ * Fixed boot, bill-proposal and summary fonts
+ * Add bill sorting when specifiying law id for logged users #29
+ * Fix tweet text and link in case the author does not have a twitter account
+ * Share buttons and text centered vertically
+ * Social buttons: set border radius
+ * Fixed social buttons alignment and responsiveness
+ * Automatic next law after scoring
+ * make bill with ID provided by URL first element of the list for non logged in requests #29
+ * Updated social links URLs
+ * /summary renamed to /gracias
+ * After voting last law, redirects to /gracias
+ * Fixed progress bar caption right margin
+ * Merge pull request #62 from DemocraciaEnRed/fix/text-sizes-and-styles
+ * Remove deprecated stylesheets
+ * Fix styles and texts for non compatible browser page #58
+ * Add non compatible browsers page for IE lte 8. Closes #58
+ * Add Raleway font and fix bill proposal type sizes Closes #61
+ * Add rendering a incompatible browser page when using IE lte 8
+ * default bill sorting for logged in citizens #29
+ * New layout for twitter button #46
+ * New layout for the Talk to the Author button #46
+ * Add button for tweeting to the author #46
+ * Redirect to /signup when unlogged user attempts to vote. Closes #60
+ * Remove footer image and link it to a clouded image. Closes #59
+ * Update title on law change
+ * When navigating laws, change the url. Closes #57
+ * Fix titles sizes. Closes #50
+ * Set context parameters to know law id #29
+ * Hide prev and next buttons and text on first and last BillProposal
+ * Add page:render event on help
+ * Fix reference to images on BillProposal
+ * Fix styles in /proyectos and /acerca-de for entry-tag
+ * Add random bill sorting #29
+ * Fix navigation on mobile and loading lock
+ * Fix routing for /acerca-de and /proyectos, and title styles for #45
+ * Add scoring options
+ * Layout refactored
+ * Update footer logo href and title. Closes #44
+ * Disable next and prev buttons
+ * Extend summary length to 350 characters
+ * Add carrousel and fix styles
+ * Added empty tile on navigator for first and last law. Closes #43.
+ * Add styles for BillProposal
+ * fix laws loading
+ * Separating into BillProposalViewer and BillProposal
+ * Improved Summary layout
+ * Separate into BillProposalViewer
+ * Done Summary layout
+ * Add global subtitle. Update progress caption to bold
+ * Created Summary page
+ * Fix logo position on mobile. Expand progress bar on mobile to 75%
+ * Move progress bar caption a few pxs to the right, translate to spanish the /projects and /about routes
+ * Merge pull request #42 from mairwilliams/patch-1
+ * Update tos.md
+
+0.8.24b / 2014-10-31
+==================
+
+ * Update build files. Closes #48
+
+0.8.24a / 2014-10-29
+==================
+
+ * Fix clumsy design #32
+ * Fix loading lock setting locked .site-content to 100% height as now it has a relative position. Closes #40
+ * Added law progress bar
+ *  Add new logo for DEMOS. LOGO env variable should point to /lib/boot/images/logo.svg instead of /lib/boot/images/logo.png. Closes #35
+ * Add link to authorUrl in their picture. Fix main-content height for mobile
+ * Set fixed height to main-content bill container #32
+ * Add padding between box and bottom div #32
+ * Fix layout rendering and set max length 300 for summary #32
+ * Add link to democracyos website and fix footer position #34
+ * Starting with the footer. Missing deeply testing and correct reubication at the bottom of the page
+
+0.8.24 / 2014-10-22
+==================
+
+ * Fix dep ref back to upstream
+ * Revert "Update ref to a breaking dep"
+ * Revert "Update all dep refs from 'visionmedia' to 'tj' #456"
+
+0.8.23 / 2014-10-21
+==================
+
+ * Update ref to a breaking dep
+
+0.8.22 / 2014-10-21
+==================
+ * Update all dep refs from 'visionmedia' to 'tj' #456
+ * Update dep for DemocracyOS/side-comments
+ * Update refs for component/t
+ * Pin deps for component/emitter
+
+0.8.21 / 2014-10-21
+==================
+
+ * Fix fixtures use and add acknowledgements to README.md
+
+0.8.20 / 2014-10-20
+==================
+
+ * Fix fetching own comments from mongodb
+
+0.8.19 / 2014-10-15
+==================
+
+ * Fix layout and style of reply buttons. Closes #407
+
+0.8.18 / 2014-10-09
+==================
+
+ * Fix comments not showing up on any law
+ * Fix 'No citizen has argumented on this law yet' message
+
+0.8.17 / 2014-10-08
+==================
+
+ * fix admin able to delete side-comments of all users. Closes #448
+ * Fix avatar usage in side-comments. Closes #447
+
+0.8.16 / 2014-10-08
+==================
+
+ * Fix summary html rendering
+ * Complete catalan translation
+ * Add side-comments for summary paragraphs. Closes #33
+ * Fix sorting by 'Closing soon'. Close #442
+ * removes spanish error message (changed to english) - PR #442
+ * Update DemocracyOS/side-comments dep version. Close #436
+
+0.8.15 / 2014-10-08
+==================
+
+ * Add deleting comments as a staff member
+
+0.8.14 / 2014-10-07
+==================
+
+ * Bump sidebar-comments dep version to 0.0.9 and stylize them
+
+0.8.13 / 2014-10-07
+==================
+
+ * Bump DemocracyOS/side-comments dep version
+
+0.8.12 / 2014-10-07
+==================
+
+ * Fix side-comments avatar usage. Closes #447
+
+0.8.11 / 2014-10-07
+==================
+
+ * Partially undo last fix
+
+0.8.10 / 2014-10-07
+==================
+
+ * Fix filter box styles
+
+0.8.9 / 2014-10-07
+==================
+
+ * [side-comments] - Fix side-comments dep
+
+0.8.8 / 2014-10-06
+==================
+
+ * Pin mongoose version to 3.8.16
+
+0.8.7 / 2014-10-06
+==================
+
+ * Bump component-resolver dep version
+
+0.8.6 / 2014-10-02
+==================
+
+ * Update timeago dep
+
+0.8.5 / 2014-09-30
+==================
+
+ * Fix rendering clauses when only 1 clause is present. Closes #440
+
+0.8.4 / 2014-09-29
+==================
+
+ * Fix null citizen on lookup
+
+0.8.3 / 2014-09-22
+==================
+
+ * Add author field to law #428
+ * Add ToS and PP accept on signup #405
+ * Remove 'Bill' prefix from title and remove required lawId #424
+ * Fix refresh signin when there are no laws #434
+ * Fix typo on 'Read more'
+
+0.8.2 / 2014-09-19
+==================
+
+ * Add portuguese locale
+ * Add missing key from `en.json`
+
+0.8.1 / 2014-09-18
+==================
+
+ * Fix Makefile building the app as well as post-install script
+ * Update dependencies for closest non-deprecated version. Closes #431
+ * Fix translations
+
+0.8.0 / 2014-09-16
+==================
+
+ * Add citizen profile picture as a URL
+ * Add external links to a law
+ * Add custom text to truncate law clauses
+ * Add unvotable laws
+ * Remove 'source' as a required law attribute
+
+0.7.6c / 2014-09-11
+==================
+
+ * Fix create law
+
+0.7.6b / 2014-09-05
+==================
+
+ * [sidebar] - Fix path to check.png image
+
+0.7.6 / 2014-09-05
+==================
+
+ * Add navigate back to /law/:id after succesful signin. Closes #369
+ * Update node version to 0.10.28
+ * Update npm version to 1.4.9
+ * Update to Component(1)
+ * Fix English translations
+ * Fix signin tabindex
+
+0.7.5 / 2014-08-26
+==================
+
+ * Fix spanish translations
+ * Add menu items for `faq`, `tos`, `pp` and `glossary`, conditional to settings. Closes #412
+ * Add denying user to up/downvote comments if they are not signed in. Closes #403
+ * Add translations for 'You must be signed in to up/downvote arguments' #403
+
+0.7.4 / 2014-08-14
+==================
+
+ * Add Dutch translations
+ * Add German translations
+ * Add View and FormView base js classes for all view to extend them and not repeat the same logic through all the app
+ * Add Stateful and StatefulView components to handle view states
+ * Add autosubmit and autovalidate for forms
+ * Add SideComments, but comment it out
+ * Add CONTRIBUTORS file
+ * Add MIT License text
+ * Update README.md
+ * Remove trailing whitespaces
+ * Fix environment variables for FAQ, Terms of Service, Privacy Policy and Glossary enabling
+ * Fix email validation flow to redirect to the topic the user was reading before signup
+ * Fix 'Guest' displayed to logged in user as their fullname
+ * Fix SignUp bug on Firefox
+
+0.7.3 / 2014-07-12
+==================
+
+ * Fix not showing page content once page changes having no laws. Closes #385
+
+0.7.2 / 2014-06-23
+==================
+
+ * Add 'for' attribute on 'hide-voted' label
+ * Add app stats for admin users #377
+ * Add `#content` lock until page is rendered #183
+ * Add setting `emailValidated` to true when signup in 'development' environment. Closes #374
+ * Add optional text-centered law clauses from the admin #197
+ * Add disclaimer when sidebar has no law to select #355
+ * Add strip package. Closes #334
+ * Add README.md stub
+ * Add glossary #371
+ * Add layout as a separate module #86
+ * Update default logo and favicon URL in config
+ * Update `clauseId` to be non-required `clauseName` #304
+ * Update `sidebar` to hide 'closing-soon' filter when seeing only closed laws #368
+ * Update  with link for Christian Martínez
+ * Update voting to prevent reloading the page. Closes #367
+ * Update 'discore/closest' to 'component/closest'
+ * Fix counter label when there are +99 open/closed laws
+ * Fix anchor colors to be consistent all the way across the app. #375
+ * Fix typo on snapper destroy
+ * Fix participants to be ordered by voted date #339
+ * Fix `read more` links on comments #361
+ * Fix law articles bold color links #354
+ * Fix zoom on mobile (make it un-zoomable) #364
+ * Fix dropdown on all browsers
+ * Fix header race condition #325
+ * Fix facebook and twitter cards, escaping HTML characters
+ * Fix open and closed count as they were counting drafts if you were signed in as admin. Closes #342
+
+0.7.1 / 2014-05-30 
+==================
+
+ * Remove 404 not found page
+
+0.7.0 / 2014-05-29 
+==================
+
+ * Add 404 not found page
+ * Add support for FAQ, Terms of Service and Privacy Policy pages
+ * Add 'My argument' section
+ * Add disable up/downvoting own comments
+ * Add sorting comments
+ * Add an 'edited' label next to a comment when it was edited
+ * Add spinner for loading comments
+ * Update proposal-article to auto-scale iframes (i.e.: youtube embedded videos)
+ * Fix timepicker in the law admin
+ * Fix logout bug
+ * Fix sidebar voted laws bug #336
+ * Fix proposal-article image size on mobile
+ * Fix transportation tag image issue
+ * See migrating to 0.7.x
+
+0.6.7 / 2014-05-16 
+==================
+
+ * Comments are marked as spam when they exceed a config parameter or, if not set, when they have more spam reports than score (upvotes minus downvotes)
+
 0.6.6 / 2014-05-14
 ==================
 
