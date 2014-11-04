@@ -1,4 +1,11 @@
 
+0.8.24d / 2014-11-04
+==================
+
+ * Update language files for login and 'Quiero cambiar mi califiación' translations. Fix bug on summary not rendering the change vote box
+ * Fixed next law delay in Summary view. Closes #75
+ * Add switchOff on BillProposalViewer. Closes #76
+
 0.8.24c / 2014-11-04
 ==================
 
