@@ -393,7 +393,7 @@
   "scoring.options.little": "Poco",
   "scoring.options.somewhat": "Bastante",
   "scoring.options.very": "Mucho",
-  "scoring.options.change-score": "Quiero cambiar mi calificación",
+  "scoring.options.change-score": "Cambiar",
   "scoring.value.nothing": "Este proyecto te interesa <strong>nada</strong>",
   "scoring.value.little": "Este proyecto te interesa <strong>poco</strong>",
   "scoring.value.somewhat": "Este proyecto te interesa <strong>bastante</strong>",

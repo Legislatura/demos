@@ -11,5 +11,5 @@
   "main": "summary.js",
   "styles": ["summary.styl"],
   "templates": ["template.jade"],
-  "locals": ["view", "title", "config", "laws", "bill-proposal"]
+  "locals": ["view", "title", "config", "laws", "bill-proposal", "citizen"]
 }
