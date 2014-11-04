@@ -1,4 +1,10 @@
 
+0.8.24e / 2014-11-04
+==================
+
+ * Fix settings page not being rendered, also update styles on this page. Closes #77
+ * Hide notifications user settings.
+
 0.8.24d / 2014-11-04
 ==================
 
