@@ -394,9 +394,9 @@
   "scoring.options.somewhat": "Bastante",
   "scoring.options.very": "Mucho",
   "scoring.options.change-score": "Quiero cambiar mi calificación",
-  "scoring.value.nothing": "Este proyecto no te interesa <strong>nada</strong>",
+  "scoring.value.nothing": "Este proyecto te interesa <strong>nada</strong>",
   "scoring.value.little": "Este proyecto te interesa <strong>poco</strong>",
-  "scoring.value.somewhat": "Este proyecto te interesa <strong>algo</strong>",
+  "scoring.value.somewhat": "Este proyecto te interesa <strong>bastante</strong>",
   "scoring.value.very": "Este proyecto te interesa <strong>mucho</strong>",
 
   "footer.using-technology-from": "con tecnología de",
