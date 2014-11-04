@@ -1,0 +1,277 @@
+@import kouto-swiss
+
+.bill-proposal
+  font-size 10px
+  height auto !important
+  &.carousel-prev
+    left: -200%;
+  &.carousel-next
+    left: 200%;
+  &:first-child .prev,
+  &:last-child .next
+    background-image none
+    &:hover
+      background-color #c9d1d3
+      cursor default
+
+    span
+      color #c9d1d3
+
+  .inner
+    clearfix()
+    margin-bottom 1em
+    padding 1em
+    border-radius 3px
+    background-color #ebeff0
+
+    h1,
+    h2
+      margin 0 0 .7em
+      padding 1em .5em
+      font-size 2em
+      font-weight 900
+      text-align center
+      text-transform uppercase
+      border-top-left-radius 3px
+      border-top-right-radius 3px
+
+    h1
+      margin 0
+      padding 0
+      padding-top 0
+
+    h2
+      font-size 1.9em
+      margin-top 0
+      margin-bottom 1em
+      padding 1em
+      font-weight 900
+
+      a.read-more
+        color #333
+        display inline-block
+        margin-left 3px
+
+    .flaticon.social
+      display block
+      text-transform inherit
+      margin-bottom 3px
+
+    .author-wrapper
+      text-align center
+      .author
+        display inline-block
+        position relative
+        margin 0
+        padding-left 3.6em
+        img
+          display inline-block
+          position absolute
+          left 0
+          top 50%
+          margin-top -1.5em
+          width 3em
+          height 3em
+          border-radius 100%
+        p
+          display inline-block
+          font-size 1.3em
+          margin 0
+          &:after
+            content '\00a0\00a0/\00a0\00a0'
+          &:last-child:after
+            content ''
+          a
+            color #000
+            text-decoration none
+            border-bottom 1px solid transparent
+            transition all .1s ease-in
+            &:hover
+              color #333
+              border-bottom 1px solid #666
+
+    .btn-talk
+      display block
+      margin 1em auto
+      width 25%
+      @media screen and (max-width 960px)
+        width 35%
+      @media screen and (max-width 700px)
+        width 75%
+
+    .pic
+      position relative
+      background-size cover
+      background-repeat no-repeat
+      background-position center center
+      span
+        display block
+        padding-top 45%
+
+      @media screen and (max-width 700px)
+        margin-bottom 10px
+
+    .desc
+      margin 0 0 .5em 0
+      font-size 1.4em
+      line-height 1.5
+      color #000
+
+    .link
+      display inline-block
+      padding-left 2.7em
+      font-size .9em
+      color #000
+      text-transform uppercase
+      text-decoration none
+      border-bottom 1px solid transparent
+      transition all .1s ease-in
+      background url('/lib/bill-proposal/images/clip.svg') no-repeat left .3em
+      &:hover
+        color #333
+        border-bottom 1px solid #666
+
+  .actions
+    position relative
+
+  .prev,
+  .next
+    width calc('50% - .5em', 49%)
+    border-radius 3px
+    cursor pointer
+    text-align center
+    transition all .1s ease-in
+    background-color #c9d1d3
+    background-repeat no-repeat
+    background-size auto 50%
+    &:hover
+      background-color #b1babc
+    span
+      font-size 1.2em
+      line-height 4
+      text-transform uppercase
+      color #fff
+      font-weight bold
+
+  .prev
+    float left
+    padding-left 0 0 0 5%
+    background-position 10% center
+    background-image url('/lib/bill-proposal/images/prev.svg')
+
+  .next
+    float right
+    padding 0 5% 0 0
+    background-position 90% center
+    background-image url('/lib/bill-proposal/images/next.svg')
+
+.score-selector
+  margin-bottom 1em
+  padding 1.5em 1em
+  border-radius 3px
+  background-color #b1babc
+
+  p
+    font-size 16px
+    font-weight bold
+    text-align center
+    padding-top 27px
+  h2
+    margin 0 0 1em
+    padding 0
+    font-size 1.7em
+    line-height 1.5
+    color #fff
+    font-weight 900
+    text-align center
+    text-transform uppercase
+
+    strong
+      border-bottom 1px solid #fff
+  ul
+    clearfix()
+    position relative
+    margin 0
+    padding 0
+    z-index 0
+    &:hover
+      li:before
+        background-color #00718C
+      li:after
+        background-color #00718C
+    li
+      cursor pointer
+      position relative
+      float left
+      width 25%
+      text-align center
+      &:before
+        content '\00a0'
+        display inline-block
+        size 1.5em
+        border-radius 100%
+        transition all .1s ease-in
+        background-color #ECF0F1
+      &:after
+        content ''
+        position absolute
+        right 50%
+        top .5em
+        width 100%
+        height .5em
+        transition all .1s ease-in
+        background-color #ECF0F1
+        z-index -1
+      &:first-child:after
+        display none
+      span
+        display block
+        color #fff
+        font-weight bold
+        font-size 1.3em
+        text-transform uppercase
+        line-height 1.7
+    li.active ~ li,
+    li:hover ~ li
+      &:before,
+      &:after
+        background-color #ECF0F1
+
+bill-proposal-big()
+  .bill-proposal
+    .pic
+      float left
+      width 45%
+      margin-right 5%
+      width calc('50% - 1em', 48%)
+      margin-right calc(1em)
+
+    .desc
+      position relative
+      top -.3em
+
+    .score-selector
+      margin-left 10em
+      margin-right 10em
+      height 11em
+
+    .prev,
+    .next
+      position absolute
+      top 0
+      padding 8em 0 0 0
+      width 9em
+      height 11em
+      float none
+      background-position center 25%
+      span
+        line-height 1
+
+    .prev
+      left 0
+
+    .next
+      right 0
+
+@media screen and (min-width 600px)
+  bill-proposal-big()

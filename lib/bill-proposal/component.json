@@ -1,5 +1,5 @@
 {
-  "name": "bill-proposal-demo",
+  "name": "bill-proposal",
   "description": "",
   "dependencies": {
     "visionmedia/page.js": "1.3.7",
@@ -18,7 +18,6 @@
     "request"
   ],
   "styles": [
-    "bill-proposal.styl",
     "styles.styl"
   ],
   "images": [
@@ -27,6 +26,6 @@
     "images/clip.svg"
   ],
   "scripts": [ "view.js" ],
-  "templates": [ "bill-proposal.jade" ],
+  "templates": [ "template.jade" ],
   "main": "view.js"
 }

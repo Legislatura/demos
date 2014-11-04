@@ -1,0 +1,24 @@
+{
+  "name": "bill-proposal-viewer",
+  "description": "",
+  "dependencies": {
+    "visionmedia/page.js": "1.3.7",
+    "component/dom": "0.7.1",
+    "jfresco/progress": "*",
+    "tomerdmnt/carousel-slide": "*",
+    "matthewmueller/array": "0.4.3"
+  },
+  "locals": [
+    "bill-proposal",
+    "citizen",
+    "laws",
+    "title",
+    "view"
+  ],
+  "styles": [
+    "styles.styl"
+  ],
+  "scripts": [ "view.js" ],
+  "templates": [ "template.jade" ],
+  "main": "view.js"
+}

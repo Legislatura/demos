@@ -2,6 +2,7 @@
   "name": "signup",
   "description": "Signup page",
   "dependencies": {
+    "component/bus": "0.0.2",
     "component/dom": "0.7.1",
     "component/domify": "1.2.0",
     "component/events": "1.0.9",
