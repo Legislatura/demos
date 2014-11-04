@@ -50,7 +50,7 @@
         - if (~verys.indexOf(citizen.id))
           - var title = 'scoring.value.very'
         h2.title!=t(title)
-        a.change-score.btn.btn-info(href='#')=t('scoring.options.change-score')
+        a.change-score.btn.btn-info=t('scoring.options.change-score')
       .scores(class=scored ? 'hide' : '')
         h2=t('scoring.options.title')
         ul
