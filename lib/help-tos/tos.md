@@ -11,7 +11,7 @@ La participación es libre y voluntaria. La comunidad que buscamos consolidar es
 en primer lugar, la _SELECCIÓN_ de Proyectos de Ley 
 en segundo lugar, el _DEBATE_ online de los Proyectos seleccionados.
 
-La _SELECCIÓN_ consiste en la presentación de 20 proyectos, distribuidos proporcionalmente por bloques parlamentarios con un mínimo de 1 proyecto por bloque, para que los ciudadanos los califiquen según su relevancia. Los proyectos de ley que registren las mayores calificaciones pasarán a la instancia de _DEBATE_. 
+La _SELECCIÓN_ consiste en la presentación de 16 proyectos, distribuidos proporcionalmente por bloques parlamentarios con un mínimo de 1 proyecto por bloque, para que los ciudadanos los califiquen según su relevancia. Los proyectos de ley que registren las mayores calificaciones pasarán a la instancia de _DEBATE_. 
 
 
 El _DEBATE_  consiste en la discusión  online de los Proyectos de Ley mejor puntuados en la instancia de _SELECCIÓN_, a partir de una adaptación específica de la plataforma web DemocraciaOS para la Legislatura de la Ciudad de Buenos Aires, . 
