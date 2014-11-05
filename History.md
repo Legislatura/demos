@@ -1,4 +1,10 @@
 
+0.8.24g / 2014-11-05
+==================
+
+ * Final texts. Honest. Really, really closes #71
+ * Fix some remaining texts for #71
+
 0.8.24f / 2014-11-04
 ==================
 
