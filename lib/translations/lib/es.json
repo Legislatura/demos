@@ -127,11 +127,11 @@
 
   "DemocracyOS - Password reset requested": "DEMOS - Reestablecer contraseña",
   "Hi {name}": "Hola {name}",
-  "Please click <a href=\"{url}\">here</a> to reset your password": "Por favor cliqueá <a href=\"{url}\">acá</a> para reestablecer tu contraseña",
+  "Please click <a href=\"{url}\">here</a> to reset your password": "Por favor <a href=\"{url}\">cliqueá acá</a> para reestablecer tu contraseña",
   "The DemocracyOS team": "El equipo de DEMOS",
   "PS: if you haven't requested to reset your password, please ignore this email": "P.D.: si no solicitaste reestablecer tu contraseña, por favor ignora este correo",
   "DemocracyOS - Welcome!": "DEMOS - Bienvenid@!",
-  "Please click <a href=\"{url}\">here</a> to validate your email address": "Por favor cliqueá <a href=\"{url}\">acá</a> para validar tu dirección de correo electrónico",
+  "Please click <a href=\"{url}\">here</a> to validate your email address": "Por favor <a href=\"{url}\">cliqueá acá</a> para validar tu dirección de correo electrónico. En DEMOS vas a poder informarte, debatir y votar proyectos de ley para que lleguemos a decisiones de forma colectiva",
   "PS: if you haven't signed up, please ignore this email": "P.D.: si no creaste una cuenta en DEMOS, por favor ignora este correo",
   "example@email.com": "ejemplo@email.com",
   "No citizen for email" : "No tenemos registrado el correo electrónico",
@@ -405,5 +405,7 @@
 
   "summary.title": "¡Gracias por sumar tu participación!",
   "summary.subtitle": "Podés cambiar tus calificaciones hasta el 12 de noviembre, día en que se definirán los ganadores.<br />¡Tu opinión vale! Ahora podemos comunicarnos usando la Red.",
-  "summary.social": "¡Compartí esta iniciativa!"
+  "summary.social": "¡Compartí esta iniciativa!",
+  "summary.share.text.twitter": "%23YoVoto%20Ya%20eleg%C3%AD%20los%20proyectos%20de%20ley%20para%20debatir%20y%20votar%20entre%20todos.%20Hacelo%20vos%20tambi%C3%A9n%3A ",
+  "summary.share.url": "http://demos.legislatura.gov.ar"
 }
