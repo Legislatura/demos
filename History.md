@@ -1,4 +1,10 @@
 
+0.8.24f / 2014-11-04
+==================
+
+ * Fix final texts and Facebook and Twittar share API calls. Closes #71
+ * Expose source attribute to client
+
 0.8.24e / 2014-11-04
 ==================
 
