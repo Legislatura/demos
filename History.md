@@ -1,4 +1,10 @@
 
+0.8.24i / 2014-11-10
+==================
+
+ * Add stats to show scores results
+ * Add autofocus to email fields in /signin and /signup. Closes #79
+
 0.8.24h / 2014-11-05
 ==================
 
