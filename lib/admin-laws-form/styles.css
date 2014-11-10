@@ -47,11 +47,6 @@
   min-height: 180px;
 }
 
-#law-wrapper .law-admin form textarea + span.error {
-  top: 5px;
-}
-
-
 #law-wrapper .law-admin form a.add-clause,
 #law-wrapper .law-admin form a.add-link {
   width: 100%;

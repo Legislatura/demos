@@ -26,7 +26,6 @@
   "Email is not valid": "Adresse de courriel invalide",
   "A firstname is required": "Il faut taper un prénom",
   "A lastname is required": "Il faut taper un nom de famille",
-  "The CAPTCHA solution was incorrect": "La solution de CAPTCHA est incorrecte",
 
   "Profile": "Profil",
   "Sessions": "Sessions",
@@ -115,7 +114,6 @@
   "By signing up you are accepting our": "En vous inscrivant, vous acceptez notre",
   "Password": "Mot de passe",
   "Repeat Password": "Retaper le mot de passe",
-  "Type the words shown in the image": "Tapez les mots affichés dans l'image",
   "Reset Password!": "Rétablir mot de passe!",
   "Forgot Password?": "Mot de passe oublié?",
   "DemocracyOS markdown": "DemocracyOS markdown",

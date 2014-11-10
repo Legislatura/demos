@@ -19,8 +19,7 @@
     "faq",
     "tos",
     "pp",
-    "glossary",
-    "recaptcha public key"
+    "glossary"
   ],
   "auth": {
     "basic": {
@@ -52,7 +51,7 @@
     }
   },
   "locale" : "en",
-  "logo": "/lib/boot/images/logo.svg",
+  "logo": "/lib/boot/images/logo.png",
   "favicon" : " http://democracyos-demo.s3.amazonaws.com/logo.png",
   "organization name" : "DemocracyOS on GitHub",
   "organization url" : "https://github.com/DemocracyOS/app",
@@ -65,7 +64,5 @@
   "faq": false,
   "tos": false,
   "pp": false,
-  "glossary": false,
-  "recaptcha public key": "get yours at https://www.google.com/recaptcha/",
-  "recaptcha private key": "get yours at https://www.google.com/recaptcha/"
+  "glossary": false
 }

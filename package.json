@@ -1,6 +1,6 @@
 {
   "name": "DemocracyOS",
-  "version": "0.8.24h",
+  "version": "0.8.19",
   "description": "An online space for deliberation and voting on political proposals. The software aims to stimulate better arguments and come to better rulings.",
   "homepage": "http://www.democracyos.org/",
   "keywords": [
@@ -72,10 +72,7 @@
     "strip": "0.0.7",
     "mkdirp": "0.5.0",
     "builder-jade": "1.0.1",
-    "stylus": "0.48.1",
-    "recaptcha": "1.2.0",
-    "kouto-swiss": "0.10.3",
-    "ua-parser": "0.3.3"
+    "stylus": "0.48.1"
   },
   "devDependencies": {},
   "main": "pdr",
@@ -84,6 +81,7 @@
     "npm": "1.4.9"
   },
   "scripts": {
-    "test": ""
+    "test": "",
+    "postinstall": "node ./bin/dos-install && node ./bin/dos-config && node ./bin/dos-build"
   }
 }

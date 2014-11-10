@@ -27,7 +27,6 @@
   "Email is not valid": "Email adres is not valide",
   "A firstname is required": "Een voornaam is verplicht",
   "A lastname is required": "Een achternaam is verplicht",
-  "The CAPTCHA solution was incorrect": "De CAPTCHA oplossing onjuist was",
 
   "Profile": "Profiel",
   "Sessions": "Sessies",
@@ -99,7 +98,6 @@
   "By signing up you are accepting our": "Door in te schrijven aanvaardt u onze",
   "Password": "Wachtwoord",
   "Repeat Password": "Herhaal wachtwoord",
-  "Type the words shown in the image": "Typ de weergegeven in de afbeelding woorden",
   "Reset Password!": "Wachtwoord opnieuw instellen!",
   "Forgot Password?": "Wachtwoord vergeten?",
   "DemocracyOS markdown": "DemocracyOS markdown",

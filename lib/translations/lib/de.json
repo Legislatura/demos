@@ -26,7 +26,6 @@
   "Email is not valid": "Ungültige E-Mail-Adresse",
   "A firstname is required": "Vorname erforderlich",
   "A lastname is required": "Nachname erforderlich",
-  "The CAPTCHA solution was incorrect": "Der CAPTCHA-Lösung war nicht korrekt",
 
   "Profile": "Profil",
   "Sessions": "Sitzungen",
@@ -98,7 +97,6 @@
   "By signing up you are accepting our": "Wenn Sie sich akzeptieren Sie unsere",
   "Password": "Passwort",
   "Repeat Password": "Passwort wiederholen",
-  "Type the words shown in the image": "Geben Sie die im Bild angezeigten Wörter",
   "Reset Password!": "Passwort zurücksetzen!",
   "Forgot Password?": "Passwort vergessen?",
   "DemocracyOS markdown": "DemocracyOS Markdown",

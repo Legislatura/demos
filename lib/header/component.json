@@ -12,8 +12,7 @@
     "render",
     "snapper",
     "user-badge",
-    "view",
-    "how-it-works"
+    "view"
   ],
   "scripts": [
     "index.js",
@@ -21,6 +20,5 @@
   ],
   "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
-  "images": ["logo.svg"],
   "main": "index.js"
 }

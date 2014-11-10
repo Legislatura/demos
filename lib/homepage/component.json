@@ -15,8 +15,7 @@
   "locals": [
     "citizen",
     "sidebar",
-    "render",
-    "laws"
+    "render"
   ],
   "scripts": [
     "homepage.js"

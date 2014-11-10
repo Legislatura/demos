@@ -1,12 +1,10 @@
-@import "kouto-swiss"
-
 /* Vars
 -------------------------------------------------- */
 
 header_height = 60px
 spacing = 20px
 border_radius = 3px
-nav_proposal_width = 0px
+nav_proposal_width = 266px
 content_width = 580px
 link_blue = #2980b9
 
@@ -17,7 +15,8 @@ html
   -webkit-font-smoothing antialiased
 
 body
-  color: #4d4d4d
+  color #4d4d4d
+  overflow hidden
 
 h1,h2,h3,h4,h5,h6
   font-weight bold
@@ -82,12 +81,6 @@ img.avatar
   margin auto
   max-width content_width
 
-.medium-container
-  max-width: 350px
-  padding-left: 10px
-  padding-right: 10px
-  margin: auto
-
 .small-container
   max-width 300px
   padding-left 10px
@@ -112,7 +105,7 @@ img.avatar
     line-height 80px
     color #7f8c8d
 
-  h1, h2
+  h1
     font-size 12px
     letter-spacing 1px
     text-transform uppercase
@@ -124,15 +117,13 @@ body.browser-page
     display none
 
 section.site-content
-  top 0
+  top header_height
   left nav_proposal_width
   right 0
   bottom 0
   &#content
     z-index 12
     left 0
-  &.locked
-    height 100%
 
 /* Signin page
 -------------------------------------------------- */
@@ -149,7 +140,7 @@ section.site-content
 /* Sidebar
 -------------------------------------------------- */
 aside.nav-proposal
-  top 0
+  top header_height
   left 0
   bottom 0
   width nav_proposal_width
@@ -162,18 +153,16 @@ aside.nav-proposal
       border-bottom 1px solid lighten(#BDC3C7, 40%)
       a.voted
         min-height 75px
-      &:nth-child(n+3) a
-          padding-left 40px !important
 
       a
+        padding-left spacing
         padding-top 14px
         padding-bottom 14px
         color black
         position relative
-        padding-left 20px
+        padding-left 70px
         color #666
         min-height 60px
-
 
         .item-tag
           position absolute
@@ -308,7 +297,7 @@ aside.nav-proposal
 -------------------------------------------------- */
 body
   .overlay
-    background-image radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%)
+    background radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%)
     z-index 9999998
   #dialog
     position fixed

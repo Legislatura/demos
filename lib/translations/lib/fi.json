@@ -26,7 +26,6 @@
   "Email is not valid": "Email ei ole oikea",
   "A firstname is required": "Etunimi vaaditaan",
   "A lastname is required": "Sukunimi vaaditaan",
-  "The CAPTCHA solution was incorrect": "CAPTCHA ratkaisu oli väärä",
 
   "Profile": "Profiili",
   "Sessions": "Sessio",
@@ -112,7 +111,6 @@
   "Re-type new password": "Rekisteröitymällä käyttäjä hyväksyy meidän",
   "Password": "Salasana",
   "Repeat Password": "Toista salasana",
-  "Type the words shown in the image": "Kirjoitettava sanat kuvassa",
   "Reset Password!": "Uusi salasana!",
   "Forgot Password?": "Unohditko salasanasi?",
   "DemocracyOS markdown": "DemocracyOS markdown",

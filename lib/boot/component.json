@@ -16,8 +16,6 @@
     "homepage",
     "proposal",
     "law",
-    "about",
-    "projects",
     "signin",
     "signup",
     "forgot",
@@ -26,12 +24,9 @@
     "flaticons",
     "admin",
     "header",
-    "footer",
     "logout",
     "help",
-    "404",
-    "summary",
-    "non-compatible-browsers"
+    "404"
   ],
   "scripts": [ "boot.js" ],
   "styles": [ "boot.styl", "boot-responsive.styl" ],

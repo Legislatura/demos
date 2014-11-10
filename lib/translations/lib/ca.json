@@ -26,7 +26,6 @@
   "Email is not valid": "Correu electrònic no vàlid",
   "A firstname is required": "Es necessari especificar un nom",
   "A lastname is required": "Es necessari especificar un cognom",
-  "The CAPTCHA solution was incorrect": "La solució de CAPTCHA és incorrecta",
 
   "Profile": "Profile",
   "Sessions": "Sessions",
@@ -117,7 +116,6 @@
   "By signing up you are accepting our": "En subscriure vostè està acceptant la nostra",
   "Password": "Contrasenya",
   "Repeat Password": "Repetir la contrasenya",
-  "Type the words shown in the image": "Escriviu les paraules que es mostren a la imatge",
   "Reset Password!": "¡Restablir contrasenya!",
   "Forgot Password?": "¿Has oblidat la teva contrasenya?",
   "DemocracyOS markdown": "DemocracyOS markdown",
