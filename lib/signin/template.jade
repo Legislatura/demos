@@ -9,7 +9,7 @@
       ul.form-errors
       .form-group
         label= t('Email')
-        input.form-control(type='text', name='email', tabindex=1, placeholder=t('example@email.com'), validate='required email')
+        input.form-control(type='text', name='email', tabindex=1, placeholder=t('example@email.com'), validate='required email', autofocus)
       .form-group
         label= t('Password')
         .forgot: a(href='/forgot', tabindex=4) #{t('Forgot Password?')}
