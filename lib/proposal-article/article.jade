@@ -35,12 +35,30 @@
           span.meta-item.meta-timeago= t('Unknown closing date')
 
     h1=proposal.mediaTitle
-    - if (proposal.author)
-      h2.author=t('admin-laws-form.label.author') + ': '
-        - if (proposal.authorUrl)
+    .author-wrapper
+      .author
+        a(href='#{proposal.authorUrl}', target='_blank')
+          img(src=proposal.authorPictureUrl)
+        p
+          span=t('admin-laws-form.label.author') + ': '
           a(href=proposal.authorUrl, target='_blank')=proposal.author
+        p
+          span=t('admin-laws-form.label.party') + ': '
+          a(href=proposal.partyUrl, target='_blank')=proposal.party
+        - var isTwitter = proposal.authorUrl && !!~proposal.authorUrl.indexOf('twitter.com')
+        - if (isTwitter)
+          - var twitter = proposal.authorUrl.split('twitter.com/')[1]
+          - var tweet = 'Hola @' + twitter + '! Quiero decirte algo sobre tu proyecto '
+          - tweet = '%23YoVoto ' + encodeURI(tweet)
+          - var url = 'http://twitter.com/share?text=' + tweet
         - else
-          =proposal.author
+          - var url = proposal.authorUrl
+        a.flaticon.social.btn.btn-link.btn-talk(target="_blank", href=url, class= isTwitter ? 'twitter' : '')=t('bill-proposal.talk-to-the-author')
+
+    - if (proposal.picture)
+      .pic(style="background-image: url(#{proposal.picture})")
+        span
+
     h3=proposal.title
     .entry-content
       - var summary = proposal.summary

@@ -204,6 +204,7 @@
 
   "proposal-article.article.alert.text": "This is DemocracyOS's public demo.",
   "proposal-article.article.alert.learn-more": "Learn more",
+  "bill-proposal.talk-to-the-author": "Talk to author",
 
   "Remove argument" : "Remove argument",
   "Spam" : "Report as spam",
@@ -247,6 +248,7 @@
   "admin-laws-form.button.add-link": "Add link",
   "admin-laws-form.message.add-link-forbidden": "Law must be saved before adding links",
   "admin-laws-form.button.submit": "Save",
+  "admin-laws-form.label.party": "Party",
 
   "admin-laws-form.message.public-status": "This law is published to public",
   "admin-laws-form.button.make-private": "Unpublish",

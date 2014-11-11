@@ -207,6 +207,7 @@
 
   "proposal-article.article.alert.text": "Ésta es una versión demo de DemocracyOS.",
   "proposal-article.article.alert.learn-more": "Más información",
+  "bill-proposal.talk-to-the-author": "Comunicate con el autor",
 
   "Remove argument" : "Borrar argumento",
   "Spam" : "Reportar abuso",
@@ -249,6 +250,7 @@
   "admin-laws-form.message.add-clause-forbidden": "La ley debe guardarse antes de agregar artículos",
   "admin-laws-form.button.add-link": "Agregar link",
   "admin-laws-form.button.submit": "Guardar",
+  "admin-laws-form.label.party": "Partido",
 
   "admin-laws-form.message.public-status": "Esta ley está abierta al público",
   "admin-laws-form.button.make-private": "Despublicar",
