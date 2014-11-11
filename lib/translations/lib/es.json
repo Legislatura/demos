@@ -348,5 +348,39 @@
   "about.title.2": "Fechas y resultados",
   "about.paragraph.2.1": "La etapa de <strong>SELECCIÓN</strong> se desarrolla <strong>entre el 5 y el 12 de noviembre</strong>.<br>Le etapa de <strong>DEBATE</strong> se desarrolla <strong>entre el 13 y el 21 noviembre</strong>.",
   "about.title.3": "¿Qué es DemocracyOS?",
-  "about.paragraph.3.1": "<strong>DemocracyOS</strong> es una plataforma online que le permite a los ciudadanos informarse, debatir y votar proyectos en la búsqueda de estimular los mejores argumentos para llegar a decisiones de forma colectiva.<br><strong>DemocracyOS</strong> se adapta a las necesidades de cualquier organización que necesite difundir, discutir y decidir soluciones para problemas complejos. DemocracyOS es una plataforma de código abierto y puede ser utilizado, modificado y redistribuído libremente.<br><br>Por cualquier duda comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>"
+  "about.paragraph.3.1": "<strong>DemocracyOS</strong> es una plataforma online que le permite a los ciudadanos informarse, debatir y votar proyectos en la búsqueda de estimular los mejores argumentos para llegar a decisiones de forma colectiva.<br><strong>DemocracyOS</strong> se adapta a las necesidades de cualquier organización que necesite difundir, discutir y decidir soluciones para problemas complejos. DemocracyOS es una plataforma de código abierto y puede ser utilizado, modificado y redistribuído libremente.<br><br>Por cualquier duda comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>",
+
+  "results.title": "Resultados",
+
+  "bill-proposal.talk-to-the-author": "Comunicate con el autor",
+  "admin-laws-form.label.party": "Bloque",
+
+  "projects.title.1": "¿Cómo se eligieron los proyectos?",
+  "projects.paragraph.1.1": "Los proyectos fueron elegidos por los Legisladores y distribuidos proporcionalmente a cada espacio político de acuerdo al número total de diputados en la Legislatura, asignándose con un mínimo de 1 proyecto por bloque parlamentario.",
+  "projects.paragraph.1.2": "En caso de que el bloque tuviera la voluntad de presentar un proyecto para la etapa de SELECCIÓN, el mismo fue nominado por su Presidencia. En caso de que no, se optó por no variar la proporcionalidad establecida sobre 20 proyectos.",
+  "projects.paragraph.1.3": "Por eso, participan en DEMOS 12 de los 15 bloques parlamentarios que hoy existen en la Legislatura pero aquellos que tienen una representación mayor cuentan con más cantidad de proyectos.",
+  "projects.title.2": "¿Cómo se determinan los proyectos ganadores?",
+  "projects.paragraph.2.1": "Los proyectos ganadores se determinan a partir de un simple sistema de puntajes, según las calificaciones otorgadas por los ciudadanos, donde:",
+  "projects.paragraph.2.3": "<strong>\"NADA\"</strong> vale 0",
+  "projects.paragraph.2.4": "<strong>\"POCO\"</strong> vale 3",
+  "projects.paragraph.2.5": "<strong>\"BASTANTE\"</strong> vale 7",
+  "projects.paragraph.2.6": "<strong>\"MUCHO\"</strong> vale 10",
+  "projects.paragraph.2.7": "<strong>\"SALTEAR\"</strong> un proyecto no otorga puntos",
+  "projects.paragraph.2.8": "El resultado de la sumatoria de calificaciones compone el puntaje definitivo de cada proyecto. Los 3 proyectos con mayor puntaje, serán los ganadores.",
+  "projects.title.3": "¿Cuáles son los proyectos?",
+  "projects.paragraph.3.1": "Mirá todos los proyectos que se votaron <a href=\"/resultados\">acá</a>",
+  "projects.paragraph.3.2": "Por cualquier duda comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>",
+  "projects.how-was-calculated": "¿Cómo se calculó?",
+
+  "scoring.options.title": "¿Cuánto te interesa debatir este proyecto?",
+  "scoring.options.nothing": "Nada",
+  "scoring.options.little": "Poco",
+  "scoring.options.somewhat": "Bastante",
+  "scoring.options.very": "Mucho",
+  "scoring.options.change-score": "Cambiar",
+  "scoring.value.nothing": "Este proyecto te interesa <strong>nada</strong>",
+  "scoring.value.little": "Este proyecto te interesa <strong>poco</strong>",
+  "scoring.value.somewhat": "Este proyecto te interesa <strong>bastante</strong>",
+  "scoring.value.very": "Este proyecto te interesa <strong>mucho</strong>",
+  "scoring.total-score": "Puntaje total: {totalScore}"
 }

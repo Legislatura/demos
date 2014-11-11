@@ -11,6 +11,8 @@
   },
   "locals": [
     "about",
+    "projects",
+    "results",
     "config",
     "body-classes",
     "content-lock",

@@ -1,0 +1,85 @@
+- var nothings = law.nothings || []
+- var littles = law.littles || []
+- var somewhats = law.somewhats || []
+- var verys = law.verys || []
+- var census = nothings.concat(littles).concat(somewhats).concat(verys)
+
+- var scored = citizen.id && ~census.indexOf(citizen.id)
+
+.bill-proposal(data-id=law.id)
+  .inner
+    h2.law-title(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
+    .author-wrapper
+      .author
+        a(href='#{law.authorUrl}', target='_blank')
+          img(src=law.authorPictureUrl)
+        p
+          span=t('admin-laws-form.label.author') + ': '
+          a(href=law.authorUrl, target='_blank')=law.author
+        p
+          span=t('admin-laws-form.label.party') + ': '
+          a(href=law.partyUrl, target='_blank')=law.party
+    - var isTwitter = law.authorUrl && !!~law.authorUrl.indexOf('twitter.com')
+    - if (isTwitter)
+      - var twitter = law.authorUrl.split('twitter.com/')[1]
+      - var tweet = 'Hola @' + twitter + '! Quiero decirte algo sobre tu proyecto '
+      - tweet = '%23YoVoto ' + encodeURI(tweet)
+      - var url = 'http://twitter.com/share?text=' + tweet
+    - else
+      - var url = law.authorUrl
+    a.flaticon.social.btn.btn-link(target="_blank", href=url, class= isTwitter ? 'twitter' : '')=t('bill-proposal.talk-to-the-author')
+
+    - if (law.picture)
+      .pic(style="background-image: url(#{law.picture})")
+        span
+
+    p.desc=law.summary
+
+    a.link(href=law.source, target='_blank')=t('View the original text')
+
+    .results-box
+      .scored.text-center(class=!scored ? 'hide' : '')
+        - var title = ''
+        - if (~nothings.indexOf(citizen.id))
+          - var title = 'scoring.value.nothing'
+        - if (~littles.indexOf(citizen.id))
+          - var title = 'scoring.value.little'
+        - if (~somewhats.indexOf(citizen.id))
+          - var title = 'scoring.value.somewhat'
+        - if (~verys.indexOf(citizen.id))
+          - var title = 'scoring.value.very'
+        h2.title!=t(title)
+      .row
+        .results-chart(class= census.length ? '' : 'hide').col-xs-12.col-sm-6.text-center
+          canvas#results-chart(width="145", height="145")
+        .results-summary(class= census.length ? '' : 'hide').col-xs-12.col-xs-offset-3.col-sm-6.col-sm-offset-0
+          .scores-verys.scores-results
+            - var width = census.length ? (verys.length/census.length)*100 : 0;
+            - var width = Math.round(width*100)/100
+            - var s = 1 === verys.length ? '' : 's'
+              span.percent=t('scoring.options.very') + ' ' + width + '% '
+              span.scores #{verys.length} #{t('vote') + s}
+
+          .scores-somewhats.scores-results
+            - var width = census.length ? (somewhats.length/census.length)*100 : 0;
+            - var width = Math.round(width*100)/100
+            - var s = 1 === somewhats.length ? '' : 's'
+              span.percent=t('scoring.options.somewhat') + ' ' + width + '% '
+              span.scores #{somewhats.length} #{t('vote') + s}
+
+          .scores-littles.scores-results
+            - var width = census.length ? (littles.length/census.length)*100 : 0;
+            - var width = Math.round(width*100)/100
+            - var s = 1 === littles.length ? '' : 's'
+              span.percent=t('scoring.options.little') + ' ' + width + '% '
+              span.scores #{littles.length} #{t('vote') + s}
+
+          .scores-nothings.scores-results
+            - var width = census.length ? (nothings.length/census.length)*100 : 0;
+            - var width = Math.round(width*100)/100
+            - var s = 1 === nothings.length ? '' : 's'
+            span.percent=t('scoring.options.nothing') + ' ' + width + '% '
+            span.scores #{nothings.length} #{t('vote') + s}
+        .scored.text-center.col-xs-12
+          h2.title=t('scoring.total-score', {totalScore: law.totalScore})
+          small: a(href='/proyectos')=t('projects.how-was-calculated')
