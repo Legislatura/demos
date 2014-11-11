@@ -8,7 +8,6 @@
   "locals": [
     "config",
     "citizen",
-    "side-comments",
     "request",
     "stateful-view"
   ],
