@@ -1,4 +1,15 @@
 
+0.8.24k / 2014-11-11
+==================
+
+ * Update remaining dates. Fixes #95
+
+0.8.24j / 2014-11-11
+==================
+
+ * Update phases' date ranges. Closes #95
+ * Add stats to show scores results
+
 0.8.24i / 2014-11-10
 ==================
 
