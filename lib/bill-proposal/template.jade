@@ -1,10 +1,4 @@
-- var nothings = law.nothings || []
-- var littles = law.littles || []
-- var somewhats = law.somewhats || []
-- var verys = law.verys || []
-- var census = nothings.concat(littles).concat(somewhats).concat(verys)
-
-- var scored = citizen.id && ~census.indexOf(citizen.id)
+- var scored = law.userScored
 
 .bill-proposal(data-id=law.id)
   .inner
@@ -39,19 +33,10 @@
 
   .actions
     .score-selector
-      .scored.text-center(class=!scored ? 'hide' : '')
-        - var title = ''
-        - if (~nothings.indexOf(citizen.id))
-          - var title = 'scoring.value.nothing'
-        - if (~littles.indexOf(citizen.id))
-          - var title = 'scoring.value.little'
-        - if (~somewhats.indexOf(citizen.id))
-          - var title = 'scoring.value.somewhat'
-        - if (~verys.indexOf(citizen.id))
-          - var title = 'scoring.value.very'
-        h2.title!=t(title)
+      .scored.text-center(class=!law.userScored ? 'hide' : '')
+        h2.title!=t('scoring.value.' + law.userScore)
         a.change-score.btn.btn-info=t('scoring.options.change-score')
-      .scores(class=scored ? 'hide' : '')
+      .scores(class=law.userScored ? 'hide' : '')
         h2=t('scoring.options.title')
         ul
           li.score.score-nothing
