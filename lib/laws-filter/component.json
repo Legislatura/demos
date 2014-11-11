@@ -13,7 +13,8 @@
     "citizen",
     "laws",
     "store",
-    "stateful"
+    "stateful",
+    "laws-phase-two"
   ],
   "scripts": [ "laws-filter.js", "sorts.js" ],
   "main": "laws-filter.js"
