@@ -13,6 +13,8 @@
   "header.logout": "Cerrar sesión",
   "header.settings": "Configuración",
   "header.feedback": "Sugerencias",
+  "header.about": "¿Qué es DEMOS?",
+  "header.projects": "Los proyectos",
 
   "Incorrect password": "Contraseña incorrecta",
   "Incorrect username": "Nombre de usuario incorrecto",
@@ -333,5 +335,15 @@
   "side-comments.login": "Ingresar",
   "side-comments.signup": "Registrarse",
   "side-comments.delete.confirmation": "¿Deseas eliminar este comentario?",
-  "side-comments.confirmation.title": "Eliminar comentario"
+  "side-comments.confirmation.title": "Eliminar comentario",
+
+  "about.title.1": "¿Qué es DEMOS?",
+  "about.paragraph.1.1": "DEMOS, desarrollado por <a href=\"http://democraciaenred.org\">Democracia en Red</a> con el apoyo de la <a href=\"http://www.legislatura.gov.ar\">Legislatura Porteña</a> para introducir nuevos mecanismos de participación que generen mayor conciencia cívica entre los ciudadanos.",
+  "about.paragraph.1.2": "DEMOS, se desarrolla en dos instancias: <br>en primer lugar, la <strong>SELECCIÓN</strong> de Proyectos de Ley <br>en segundo lugar, el <strong>DEBATE</strong> online de los Proyectos seleccionados.",
+  "about.paragraph.1.3": "La SELECCIÓN consiste en la presentación de 16 proyectos con estado parlamentario para que los ciudadanos los califiquen según cuánto les interese debatirlos. Los 3 proyectos de ley que registren las mayores calificaciones pasarán a la instancia de DEBATE.",
+  "about.paragraph.1.4": "El DEBATE se orientará hacia el tratamiento online de los Proyectos de Ley utilizando una adaptación de la plataforma web DemocracyOS, desarrollada específicamente para la Legislatura.",
+  "about.title.2": "Fechas y resultados",
+  "about.paragraph.2.1": "La etapa de <strong>SELECCIÓN</strong> se desarrolla <strong>entre el 5 y el 12 de noviembre</strong>.<br>Le etapa de <strong>DEBATE</strong> se desarrolla <strong>entre el 13 y el 21 noviembre</strong>.",
+  "about.title.3": "¿Qué es DemocracyOS?",
+  "about.paragraph.3.1": "<strong>DemocracyOS</strong> es una plataforma online que le permite a los ciudadanos informarse, debatir y votar proyectos en la búsqueda de estimular los mejores argumentos para llegar a decisiones de forma colectiva.<br><strong>DemocracyOS</strong> se adapta a las necesidades de cualquier organización que necesite difundir, discutir y decidir soluciones para problemas complejos. DemocracyOS es una plataforma de código abierto y puede ser utilizado, modificado y redistribuído libremente.<br><br>Por cualquier duda comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>"
 }
