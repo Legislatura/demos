@@ -17,6 +17,7 @@
   },
   "locals": [
     "form-view",
+    "laws",
     "tags",
     "laws",
     "render",

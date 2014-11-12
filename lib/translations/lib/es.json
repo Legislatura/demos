@@ -255,6 +255,7 @@
   "admin-laws-form.button.add-link": "Agregar link",
   "admin-laws-form.button.submit": "Guardar",
   "admin-laws-form.label.party": "Partido",
+  "admin-laws-form.label.intro": "Introducción",
 
   "admin-laws-form.message.public-status": "Esta ley está abierta al público",
   "admin-laws-form.button.make-private": "Despublicar",
