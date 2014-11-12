@@ -1,13 +1,5 @@
 - var closed = proposal.closed
 .inner-container
-  - var learnMore = config['learn more url']
-  - if (learnMore)
-    div.alert.alert-warning.alert-dismissable.system-alert
-      button(type="button", class="close", data-dismiss="alert", aria-hidden="true")
-      span #{t('proposal-article.article.alert.text')}&nbsp;&nbsp;
-      a.alert-link(href=learnMore, target="_blank") #{t('proposal-article.article.alert.learn-more')}
-
-
   article.proposal.commentable-container
     //- .meta-information
     //-   a.meta-item.meta-location(href="#") Buenos Aires, Argentina
