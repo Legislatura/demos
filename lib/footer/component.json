@@ -1,0 +1,14 @@
+{
+  "name": "footer",
+  "description": "footer component",
+  "scripts": [
+    "view.js",
+    "footer.js"
+  ],
+  "locals": [
+    "view"
+  ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "footer.js"
+}
