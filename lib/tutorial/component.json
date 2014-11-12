@@ -10,7 +10,8 @@
     "view",
     "title",
     "config",
-    "citizen"
+    "citizen",
+    "request"
   ],
   "styles": ["tutorial.styl"],
   "templates": ["template.jade"],
