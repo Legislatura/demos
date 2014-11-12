@@ -1,4 +1,22 @@
 
+0.8.25n / 2014-11-12
+==================
+
+ * Remove loading first law
+
+0.8.24m / 2014-11-12
+==================
+
+ * Shuffle array in summary
+ * Check if citizen is logged to show/hide scoring options
+ * Fix duplicated law
+ * Changed DB API in order to expose less data
+
+0.8.24l / 2014-11-12
+==================
+
+ * Fix texts one more time for #95
+
 0.8.24k / 2014-11-11
 ==================
 

@@ -370,7 +370,7 @@
   "side-comments.confirmation.title": "Eliminar comentario",
 
   "global.title": "¿Qué leyes querés que debatamos?",
-  "global.subtitle": "Calificá los proyectos según tu interés. A partir del 17 de noviembre vamos a debatir,<br/>entre todos, los 3 proyectos ganadores.",
+  "global.subtitle": "Calificá los proyectos según tu interés. A partir del 19 de noviembre vamos a debatir,<br/>entre todos, los 3 proyectos ganadores.",
   "global.non-compatible.text": "Tu navegador es poco feliz, por favor actualízalo o utiliza la última versión de <a href=\"http://www.google.com/chrome/\" target=\"_blank\">Google Chrome</a> o <a href=\"https://www.mozilla.org/es-AR/firefox/new/\" target=\"_blank\">Mozilla Firefox</a>",
 
   "about.title.1": "¿Qué es DEMOS?",
@@ -379,7 +379,7 @@
   "about.paragraph.1.3": "La SELECCIÓN consiste en la presentación de 16 proyectos con estado parlamentario para que los ciudadanos los califiquen según cuánto les interese debatirlos. Los 3 proyectos de ley que registren las mayores calificaciones pasarán a la instancia de DEBATE.",
   "about.paragraph.1.4": "El DEBATE se orientará hacia el tratamiento online de los Proyectos de Ley utilizando una adaptación de la plataforma web DemocracyOS, desarrollada específicamente para la Legislatura.",
   "about.title.2": "Fechas y resultados",
-  "about.paragraph.2.1": "La etapa de <strong>SELECCIÓN</strong> se desarrolla <strong>entre el 5 y el 14 de noviembre</strong>.<br>La etapa de <strong>DEBATE</strong> se desarrolla <strong>entre el 17 y el 28 de noviembre</strong>.",
+  "about.paragraph.2.1": "La etapa de <strong>SELECCIÓN</strong> se desarrolla <strong>entre el 5 y el 18 de noviembre</strong>.<br>La etapa de <strong>DEBATE</strong> se desarrolla <strong>entre el 19 y el 28 de noviembre</strong>.",
   "about.title.3": "¿Qué es DemocracyOS?",
   "about.paragraph.3.1": "<strong>DemocracyOS</strong> es una plataforma online que le permite a los ciudadanos informarse, debatir y votar proyectos en la búsqueda de estimular los mejores argumentos para llegar a decisiones de forma colectiva.<br><strong>DemocracyOS</strong> se adapta a las necesidades de cualquier organización que necesite difundir, discutir y decidir soluciones para problemas complejos. DemocracyOS es una plataforma de código abierto y puede ser utilizado, modificado y redistribuído libremente.<br><br>Por cualquier duda comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>",
 
@@ -414,7 +414,7 @@
   "bill-proposal.talk-to-the-author": "Comunicate con el autor",
 
   "summary.title": "¡Gracias por sumar tu participación!",
-  "summary.subtitle": "Podés cambiar tus calificaciones hasta el 14 de noviembre, día en que se definirán los ganadores.<br />¡Tu opinión vale! Ahora podemos comunicarnos usando la Red.",
+  "summary.subtitle": "Podés cambiar tus calificaciones hasta el 18 de noviembre, día en que se definirán los ganadores.<br />¡Tu opinión vale! Ahora podemos comunicarnos usando la Red.",
   "summary.social": "¡Compartí esta iniciativa!",
   "summary.share.text.twitter": "%23YoVoto%20Ya%20eleg%C3%AD%20los%20proyectos%20de%20ley%20para%20debatir%20y%20votar%20entre%20todos.%20Hacelo%20vos%20tambi%C3%A9n%3A ",
   "summary.share.url": "http://demos.legislatura.gov.ar"
