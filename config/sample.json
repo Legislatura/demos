@@ -19,7 +19,8 @@
     "faq",
     "tos",
     "pp",
-    "glossary"
+    "glossary",
+    "recaptcha public key"
   ],
   "auth": {
     "basic": {
@@ -64,5 +65,7 @@
   "faq": false,
   "tos": false,
   "pp": false,
-  "glossary": false
+  "glossary": false,
+  "recaptcha public key": "get yours at https://www.google.com/recaptcha/",
+  "recaptcha private key": "get yours at https://www.google.com/recaptcha/"
 }

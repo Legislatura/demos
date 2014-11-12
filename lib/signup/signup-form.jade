@@ -4,38 +4,61 @@
       .circle
         i.icon-user
       h1= t('Signup with email')
+      h2.signin
+        span=t('Already have an account?') + ' '
+          a(href='/signin', tabindex=1)=t('header.signin')
     form.form(action='/signup', method="post", role="form", autovalidate='autovalidate', autosubmit='autosubmit')
       - if (reference)
         input(type='hidden', name='reference', value=reference)
       ul.form-errors
       .form-group
         label= t('Email')
-        input.form-control(type='email', name='email', tabindex=1, placeholder=t('example@email.com'), validate='required email')
+        input.form-control(type='email', name='email', tabindex=2, placeholder=t('example@email.com'), validate='required email', autofocus)
       .form-group
         label #{t('Your firstname')}
-        input.form-control(type='text', id='firstName', name='firstName', tabindex=2, placeholder=t('Firstname'), validate='required firstname')
+        input.form-control(type='text', id='firstName', name='firstName', tabindex=3, placeholder=t('Firstname'), validate='required firstname')
       .form-group
         label #{t('Your lastname')}
-        input.form-control(type='text', id='lastName', name='lastName', tabindex=3, placeholder=t('Lastname'), validate='required lastname')
+        input.form-control(type='text', id='lastName', name='lastName', tabindex=4, placeholder=t('Lastname'), validate='required lastname')
       .form-group
         label= t('Password')
-        input.form-control(type='password', name='password', tabindex=4, placeholder=t('Password'), validate='required min-length:6')
+        input.form-control(type='password', name='password', tabindex=5, placeholder=t('Password'), validate='required min-length:6')
       .form-group
         label= t('Re-type password')
-        input.form-control(type='password', name='re_password', tabindex=5, placeholder=t('Repeat Password'), validate='required same:password')
-      .form-group: button.btn.btn-success.btn-block.btn-lg(tabindex=6)=t('Signup now!')
+        input.form-control(type='password', name='re_password', tabindex=6, placeholder=t('Repeat Password'), validate='required same:password')
+      .form-group
+        #captcha-container
+        #recaptcha_widget
+          #recaptcha_image
+          input.form-control#recaptcha_response_field(type="text", name="recaptcha_response_field", tabindex=7, placeholder=t('Type the words shown in the image'))
+          ul.recaptcha_controls
+            li#recaptcha-reload
+              a(href="javascript:Recaptcha.reload()")
+                i.glyphicon.glyphicon-refresh
+            li.recaptcha_only_if_image
+              a(href="javascript:Recaptcha.switch_type('audio')")
+                i.glyphicon.glyphicon-volume-up
+            li.recaptcha_only_if_audio
+              a(href="javascript:Recaptcha.switch_type('image')")
+                i.glyphicon.glyphicon-font
+            li#recaptcha-help
+              a(href="javascript:Recaptcha.showhelp()")
+                i.glyphicon.glyphicon-question-sign
+      .form-group: button.btn.btn-success.btn-block.btn-lg(tabindex=8)=t('Signup now!')
       .form-group
         - var tos = config['tos'];
         - var pp = config['pp'];
         - if (tos || pp)
-          p.help-block.text-center=t('By signing up you are accepting our')
           ul.text-center
             - if (pp)
-              li: a(href='/help/terms-of-service', target='_blank')=t('help.tos.title')
-            - if (tos)
               li: a(href='/help/privacy-policy', target='_blank')=t('help.pp.title')
+            - if (tos)
+              li: a(href='/help/terms-of-service', target='_blank')=t('help.tos.title')
   #signup-message.hide
     h1 Welcome
     p.lead.text-muted #{t('Your sign up data was received. We sent you an email so you can validate your email address.')}.
-    p.lead.text-muted= t('Please check your email (remember to check your spam folder too) and click on the link supplied on the email.')
+    p.lead.text-muted= t('signup-form.message.2')
+    a(href='mailto:demos@legislatura.gob.ar')= 'Contactanos'
+    br
+    br
     a(href='/signup/resend-validation-email')= t('Resend validation email')
