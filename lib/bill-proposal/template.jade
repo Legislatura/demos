@@ -33,10 +33,10 @@
 
   .actions
     .score-selector
-      .scored.text-center(class=!law.userScored ? 'hide' : '')
+      .scored.text-center(class=!citizen.logged() || !scored ? 'hide' : '')
         h2.title!=t('scoring.value.' + law.userScore)
         a.change-score.btn.btn-info=t('scoring.options.change-score')
-      .scores(class=law.userScored ? 'hide' : '')
+      .scores(class=citizen.logged() && scored ? 'hide' : '')
         h2=t('scoring.options.title')
         ul
           li.score.score-nothing
