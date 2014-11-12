@@ -15,3 +15,23 @@ form .form-group ul {
   padding: 0;
   list-style: none;
 }
+
+#recaptcha_image{
+  margin-bottom: 16px;
+}
+
+.recaptcha_controls {
+  padding-top: 16px;
+  text-align: right;
+  margin-top: 6px;
+}
+
+.recaptcha_controls li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 6px;
+}
+
+.recaptcha_controls i {
+  color: #333;
+}
