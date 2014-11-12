@@ -18,6 +18,7 @@
   "locals": [
     "regexps",
     "citizen",
+    "config",
     "request",
     "title",
     "render",
