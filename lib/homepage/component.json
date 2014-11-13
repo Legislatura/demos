@@ -2,25 +2,22 @@
   "name": "homepage",
   "description": "Homepage page",
   "dependencies": {
-    "component/bus": "^0.0.2",
     "component/classes": "1.2.0",
-    "visionmedia/debug": "0.7.4",
+    "component/dom": "0.7.1",
     "visionmedia/page.js": "1.3.7",
-    "slifszyc/query": "0.0.3",
-    "visionmedia/jade": "1.1.5",
-    "yields/empty": "0.0.1",
-    "component/t": "1.0.0"
+    "visionmedia/jade": "1.1.5"
   },
-  "development": {},
   "locals": [
-    "citizen",
-    "sidebar",
-    "render"
+    "bill-proposal",
+    "laws",
+    "render",
+    "view"
   ],
   "scripts": [
-    "homepage.js"
+    "homepage.js",
+    "view.js"
   ],
-  "templates": [ "no-laws.jade" ],
+  "templates": [ "template.jade" ],
   "styles": [ "homepage.styl" ],
   "main": "homepage.js"
 }
