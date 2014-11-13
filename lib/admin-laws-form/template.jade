@@ -44,20 +44,25 @@
           - var phaseTwo = !law.id || law.phaseTwo
           input(type='checkbox', id="phaseTwo", name='phaseTwo', tabindex=7, checked=phaseTwo)
           = t('admin-laws-form.label.phaseTwo')
+      .checkbox
+        label
+          - var winner = !law.id || law.winner
+          input(type='checkbox', id="winner", name='winner', tabindex=8, checked=winner)
+          = t('admin-laws-form.label.winner')
       .form-group
         label= t('admin-laws-form.label.clause-truncation-text')
-        input.form-control(type='text', name='clauseTruncationText', tabindex=8, placeholder=t('read more'), value=law.clauseTruncationText)
+        input.form-control(type='text', name='clauseTruncationText', tabindex=9, placeholder=t('read more'), value=law.clauseTruncationText)
       .form-group
         label= t('admin-laws-form.label.source')
-        input.form-control(type='url', name='source', tabindex=9, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
+        input.form-control(type='url', name='source', tabindex=10, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
       .form-group
         label= t('admin-laws-form.label.tag')
-        select.form-control(name='tag', tabindex=10)
+        select.form-control(name='tag', tabindex=11)
           - each tag in tags
             option(selected= law.tag ? tag.hash === law.tag.hash : false, value=tag.hash)= tag.name
       .form-group
         label= t('admin-laws-form.label.summary')
-        textarea.form-control(name='summary', tabindex=11)= law.summary
+        textarea.form-control(name='summary', tabindex=12)= law.summary
       .form-group.closingAt
         label= t('admin-laws-form.label.closingAt')
         - var closingAt = ''
@@ -67,11 +72,11 @@
           - var closingAtTime = closingAt.getHours() + ':' + closingAt.getMinutes()
           - closingAt = closingAt.getFullYear() + '/' + (closingAt.getMonth() + 1) + '/' + closingAt.getDate()
         .input-group
-          input.form-control(name='closingAt', tabindex=12, readonly=true, value=closingAt)
+          input.form-control(name='closingAt', tabindex=13, readonly=true, value=closingAt)
           span.input-group-addon.clear-closingAt
             i.glyphicon.glyphicon-remove
         .input-group
-          input.form-control(name='closingAtTime', tabindex=13, value=closingAtTime, placeholder='hh:mm', validate='time')
+          input.form-control(name='closingAtTime', tabindex=14, value=closingAtTime, placeholder='hh:mm', validate='time')
       .form-group
         .law-clauses
           - if (law.clauses && law.clauses.length)
@@ -86,5 +91,5 @@
               include link
         a.add-link.btn.btn-block.btn-info(href='#')= t('admin-laws-form.button.add-link')
         span.add-link-forbidden.hide=t('admin-laws-form.message.add-link-forbidden')
-      .form-group: input.btn.btn-success.btn-block.btn-lg(type='submit', tabindex=14, value=t('admin-laws-form.button.submit'))
+      .form-group: input.btn.btn-success.btn-block.btn-lg(type='submit', tabindex=15, value=t('admin-laws-form.button.submit'))
     a.delete-law.text-danger(href='#', class= law.id ? '' : 'hide')= t('admin-laws-form.delete-law.button.delete')
