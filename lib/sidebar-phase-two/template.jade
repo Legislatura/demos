@@ -1,0 +1,17 @@
+nav.sidebar-nav
+  #list-container
+    ul.nav.navlist
+      - each item in laws
+        - var voted = citizen.logged() && !!item.voted
+        li(data-id=item.id, class= law.id == item.id ? 'active' : '')
+          a(href='/law/'+item.id, class = voted ? 'voted' : '')
+            span.title= item.mediaTitle
+            span.created-by
+              //- - if (item.participants.length > 0)
+                //- - var plural = 1 === item.participants.length ? '' : 's'
+                - var plural = true
+                div= item.participants.length + ' ' + t('Participant') + plural
+              - if (item.closingAt)
+                - var closed = item.closingAt && +new Date(item.closingAt) < Date.now()
+                span.time-ago-label= (closed ? t('Closed') : t('Close')) + ' '
+                span.meta-item.meta-timeago.ago(data-time=item.closingAt.toString())

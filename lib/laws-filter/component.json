@@ -14,7 +14,7 @@
     "laws",
     "store",
     "stateful",
-    "laws-phase-two"
+    "laws"
   ],
   "scripts": [ "laws-filter.js", "sorts.js" ],
   "main": "laws-filter.js"

@@ -1,6 +1,6 @@
 {
-  "name": "homepage",
-  "description": "Homepage page",
+  "name": "sidebar-phase-two",
+  "description": "Sidebar for phase two",
   "dependencies": {
     "component/classes": "1.2.0",
     "component/dom": "0.7.1",
@@ -8,16 +8,13 @@
     "visionmedia/jade": "1.1.5"
   },
   "locals": [
-    "bill-proposal",
-    "winners",
+    "laws-phase-two",
     "render",
-    "view"
+    "stateful-view"
   ],
   "scripts": [
-    "homepage.js",
     "view.js"
   ],
   "templates": [ "template.jade" ],
-  "styles": [ "homepage.styl" ],
-  "main": "homepage.js"
+  "main": "view.js"
 }

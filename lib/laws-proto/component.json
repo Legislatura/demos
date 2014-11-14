@@ -1,15 +1,16 @@
 {
-  "name": "laws-phase-two",
-  "description": "Collection of laws",
+  "name": "laws-proto",
+  "description": "Collection of proto laws",
   "dependencies": {
-    "component/emitter": "1.1.3",
+    "component/emitter": "*",
     "visionmedia/debug": "0.7.4"
   },
   "locals": [
     "citizen",
     "request",
     "render",
-    "stateful"
+    "stateful",
+    "laws-proto"
   ],
   "scripts": [
     "proto.js"
