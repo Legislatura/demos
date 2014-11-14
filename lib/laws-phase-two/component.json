@@ -12,8 +12,7 @@
     "stateful"
   ],
   "scripts": [
-    "laws.js",
     "proto.js"
   ],
-  "main": "laws.js"
+  "main": "proto.js"
 }

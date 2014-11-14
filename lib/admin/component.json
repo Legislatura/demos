@@ -24,7 +24,8 @@
     "tags",
     "request",
     "title",
-    "render"
+    "render",
+    "winners"
   ],
   "scripts": [ "admin.js" ],
   "styles": [ "admin.css", "admin-wrappers.css", "admin-heading.css" ],
