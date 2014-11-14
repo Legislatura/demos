@@ -59,6 +59,11 @@
           - var winner = !law.id || law.winner
           input(type='checkbox', id="winner", name='winner', tabindex=10, checked=winner)
           = t('admin-laws-form.label.winner')
+      .checkbox
+        label
+          - var singular = law.id && law.singular
+          input(type='checkbox', id="singular", name='singular', tabindex=10, checked=singular)
+          = t('admin-laws-form.label.singular')
       .form-group
         label= t('admin-laws-form.label.clause-truncation-text')
         input.form-control(type='text', name='clauseTruncationText', tabindex=11, placeholder=t('read more'), value=law.clauseTruncationText)

@@ -3,8 +3,11 @@ nav.sidebar-nav
     ul.nav.navlist
       - each item in laws
         - var voted = citizen.logged() && !!item.voted
-        li(data-id=item.id, class= law.id == item.id ? 'active' : '')
-          a(href='/law/'+item.id, class = voted ? 'voted' : '')
+        li(data-id=item.id, class=law.id == item.id ? 'active' : '')
+          - var classes = []
+          - classes.push(voted ? 'voted' : '')
+          - classes.push(!!item.singular ? 'singular' : '')
+          a(href='/law/'+item.id, class =classes)
             span.title= item.mediaTitle
             span.created-by
               //- - if (item.participants.length > 0)
