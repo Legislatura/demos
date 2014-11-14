@@ -4,7 +4,7 @@
     .row
       h1=t('results.title')
     .row.hidden-sm.hidden-xs
-      h4!=t('results.subtitle')
+      h4.col-xs-12.col-sm-6.col-sm-offset-3.text-center!=t('results.subtitle')
   .share-links.col-sm-12.text-center.container
     .row
       .col-lg-offset-3.col-lg-3.col-md-offset-3.col-md-3.hidden-xs.text-right
@@ -19,8 +19,9 @@
       .col-xs-12.col-sm-6.col-md-3.text-center.share-message.hidden-sm.hidden-md.hidden-lg #{t('results.social')}
   .container
     .row.winners
-      h2.text-center Los que pasaron a la segunda vuelta
+      h2.text-center=t('results.nextround')
+      h4.text-center=t('results.nextround.subtitle')
       .laws.col-xs-12.col-sm-12.col-md-12
     .row.nexttime
-      h2.text-center Mejor suerte para la próxima...
+      h2.text-center=t('results.not-selected')
       .laws.col-xs-12.col-sm-12.col-md-12
