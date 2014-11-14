@@ -258,6 +258,8 @@
   "admin-laws-form.button.submit": "Guardar",
   "admin-laws-form.label.party": "Partido",
   "admin-laws-form.label.intro": "Introducción",
+  "admin-laws-form.label.staffTitle": "Título interno",
+  "admin-laws-form.placeholder.staffTitle": "Dejar en blanco para fase 1, completar para fase 2",
 
   "admin-laws-form.message.public-status": "Esta ley está abierta al público",
   "admin-laws-form.button.make-private": "Despublicar",
