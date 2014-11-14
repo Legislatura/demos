@@ -361,7 +361,12 @@
   "about.title.3": "¿Qué es DemocracyOS?",
   "about.paragraph.3.1": "<strong>DemocracyOS</strong> es una plataforma online que le permite a los ciudadanos informarse, debatir y votar proyectos en la búsqueda de estimular los mejores argumentos para llegar a decisiones de forma colectiva.<br><strong>DemocracyOS</strong> se adapta a las necesidades de cualquier organización que necesite difundir, discutir y decidir soluciones para problemas complejos. DemocracyOS es una plataforma de código abierto y puede ser utilizado, modificado y redistribuído libremente.<br><br>Por cualquier duda comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>",
 
-  "results.title": "Resultados",
+  "results.title": "RESULTADOS DE LA ETAPA DE SELECCIÓN",
+  "results.subtitle": "Del 5 al 18 de noviembre, la Legislatura Porteña te presentó 16 proyectos de diferentes bloques parlamentarios para que vos pudieras calificarlos y decidir cuáles 3 vamos a debatir entre todos en la segunda etapa de DEMOS.<br><br>Acá los puntajes obtenidos por cada uno de los proyectos:",
+  "results.social": "Compartí los resultados",
+  "results.nextround": "¡ESTOS SON LOS 3 PROYECTOS QUE VAMOS A DEBATIR!",
+  "results.nextround.subtitle": "La etapa de debate comienza el 19 de noviembre",
+  "results.not-selected": "PROYECTOS NO SELECCIONADOS",
 
   "bill-proposal.talk-to-the-author": "Comunicate con el autor",
   "admin-laws-form.label.party": "Bloque",
