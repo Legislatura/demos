@@ -1,0 +1,19 @@
+{
+  "name": "laws-proto",
+  "description": "Collection of proto laws",
+  "dependencies": {
+    "component/emitter": "*",
+    "visionmedia/debug": "0.7.4"
+  },
+  "locals": [
+    "citizen",
+    "request",
+    "render",
+    "stateful",
+    "laws-proto"
+  ],
+  "scripts": [
+    "proto.js"
+  ],
+  "main": "proto.js"
+}

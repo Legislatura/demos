@@ -9,7 +9,7 @@
   },
   "locals": [
     "bill-proposal",
-    "laws",
+    "winners",
     "render",
     "view"
   ],
