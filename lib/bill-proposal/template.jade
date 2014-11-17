@@ -37,8 +37,6 @@
 
     a.link(href=law.source, target='_blank')=t('View the original text')
 
-    a.btn.btn-block.btn-primary.btn-discuss(href='/law/#{law.intro}')=t('Discuss this bill')
-
     .results-box
       .scored.text-center(class=!scored ? 'hide' : '')
         - var title = ''
@@ -85,3 +83,5 @@
         .scored.text-center.col-xs-12
           h2.title=t('scoring.total-score', {totalScore: law.totalScore})
           small: a(href='/proyectos')=t('projects.how-was-calculated')
+
+  a.btn.btn-block.btn-primary.btn-discuss(href='/law/#{law.intro}')=t('Discuss this bill')
