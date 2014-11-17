@@ -11,7 +11,8 @@
     "bill-proposal",
     "winners",
     "render",
-    "view"
+    "view",
+    "citizen"
   ],
   "scripts": [
     "homepage.js",
