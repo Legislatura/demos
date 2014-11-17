@@ -37,15 +37,16 @@
     a.link(href=law.source, target='_blank')=t('View the original text')
 
     .results-box
-      .scored.text-center
-        - var title = 'scoring.value' + (scored ? scored.value : '')
-        h2.title!=t(title)
+      - if (scored)
+        .scored.text-center
+          - var title = 'scoring.value.' + (scored ? scored.value : '')
+          h2.title!=t(title)
       .row
         .results-chart.col-xs-12.col-sm-6.text-center
           canvas#results-chart(width="145", height="145")
         .results-summary.col-xs-12.col-xs-offset-3.col-sm-6.col-sm-offset-0
           .scores-verys.scores-results
-            - var width = census ? verys.length/census)*100 : 0;
+            - var width = census ? (verys/census)*100 : 0;
             - var width = Math.round(width*100)/100
             - var s = verys === 1 ? '' : 's'
               span.percent=t('scoring.options.very') + ' ' + width + '% '
