@@ -386,5 +386,8 @@
   "scoring.value.little": "Este proyecto te interesa <strong>poco</strong>",
   "scoring.value.somewhat": "Este proyecto te interesa <strong>bastante</strong>",
   "scoring.value.very": "Este proyecto te interesa <strong>mucho</strong>",
-  "scoring.total-score": "Puntaje total: {totalScore}"
+  "scoring.total-score": "Puntaje total: {totalScore}",
+
+  "tutorial.title": "DEMOS: La Legislatura se abre",
+  "tutorial.subtitle": "La Legislatura Porteña nos propone a todos los ciudadanos una nueva forma de participar a través de Internet. DEMOS es un canal directo entre los Diputados y vos: tu opinión puede mejorar los proyectos e incidir sobre la decisión de nuestros representantes."
 }
