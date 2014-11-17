@@ -37,7 +37,7 @@
           option(value='')=''
           - each winner in winners
             - if (winner.id != law.id)
-              option(value=winner.id, selected=law.phaseOne == winner.id)=winner.mediaTitle
+              option(value=winner.id, selected=law.phaseOne ? law.phaseOne.id == winner.id : false)=winner.mediaTitle
       .form-group
         label= t('admin-laws-form.label.backgroundColor')
         input.form-control(type='color', id="backgroundColor", name='backgroundColor', tabindex=6, value=law.backgroundColor)
