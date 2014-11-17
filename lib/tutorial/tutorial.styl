@@ -1,3 +1,10 @@
+h3
+  font-size 1em
+  font-weight normal
+
+.carousel
+  height 300px
+
 .step1
   background-color yellow
 .step2
@@ -8,5 +15,22 @@
   background-color brown
 
 .btn-prev, .btn-next
-  padding 20 20
   cursor pointer
+  position absolute
+  top 125px
+  z-index 1
+  width 40px
+  height 50px
+  opacity .05
+  transition all 0.7s ease
+  &:hover
+    opacity .5
+    transition all 0.7s ease
+
+.btn-prev
+  left 20px
+  background url('/lib/tutorial/images/prev.svg') no-repeat
+
+.btn-next
+  right 20px
+  background url('/lib/tutorial/images/next.svg') no-repeat

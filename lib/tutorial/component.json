@@ -15,6 +15,11 @@
     "request",
     "render"
   ],
+  "images": [
+    "images/prev.svg",
+    "images/next.svg",
+    "images/clip.svg"
+   ],
   "styles": ["tutorial.styl"],
   "templates": ["template.jade"],
   "scripts": ["tutorial.js", "view.js"],

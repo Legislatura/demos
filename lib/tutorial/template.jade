@@ -4,8 +4,12 @@
       .title.text-center
         h1=t('tutorial.title')
     .row.text-center
+      h3=('tutorial.subtitle')
+    .row.text-center
       .col-md-2
       .col-md-8
+        a.btn-prev(href="#")
+        a.btn-next(href="#")
         .carousel
           .step1 Primer paso. Acá va una imagen.
           .step2 Segundo paso. Acá va otra imagen.
@@ -13,5 +17,3 @@
           .step4 Cuarto paso. Acá va otra imagen.
       .col-md-2
     .row.text-center
-      a.btn-prev Anterior
-      a.btn-next Siguiente
