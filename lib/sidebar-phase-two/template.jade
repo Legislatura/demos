@@ -18,3 +18,7 @@ nav.sidebar-nav
                 - var closed = item.closingAt && +new Date(item.closingAt) < Date.now()
                 span.time-ago-label= (closed ? t('Closed') : t('Close')) + ' '
                 span.meta-item.meta-timeago.ago(data-time=item.closingAt.toString())
+  .back.text-center
+    a.btn.btn-default(href='/')
+      span.glyphicon.glyphicon-chevron-left
+      =' ' + t('common.back')
