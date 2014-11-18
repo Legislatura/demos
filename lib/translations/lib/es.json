@@ -242,7 +242,7 @@
   "admin-laws-form.title.edit": "Edición de ley",
   "admin-laws-form.label.lawId": "Identificación oficial",
   "admin-laws-form.label.mediaTitle": "Título mediático",
-  "admin-laws-form.label.author": "Autor",
+  "admin-laws-form.label.author": "Autor/a",
   "admin-laws-form.label.author-picture": "Foto del autor",
   "admin-laws-form.label.party": "Bloque",
   "admin-laws-form.label.backgroundColor": "Color de fondo",
@@ -408,5 +408,8 @@
   "scoring.total-score": "Puntaje total: {totalScore}",
 
   "tutorial.title": "DEMOS: La Legislatura se abre",
-  "tutorial.subtitle": "La Legislatura Porteña nos propone a todos los ciudadanos una nueva forma de participar a través de Internet. DEMOS es un canal directo entre los Diputados y vos: tu opinión puede mejorar los proyectos e incidir sobre la decisión de nuestros representantes."
+  "tutorial.subtitle": "La Legislatura Porteña nos propone a todos los ciudadanos una nueva forma de participar a través de Internet. DEMOS es un canal directo entre los Diputados y vos: tu opinión puede mejorar los proyectos e incidir sobre la decisión de nuestros representantes.",
+
+  "results.share.text.twitter": "Los%203%20proyectos%20fueron%20SELECCIONADOS.%20Desde%20ma%C3%B1ana%2C%20podremos%20DEBATIRLOS%20y%20VOTARLOS%20%23YoVoto%20%23DEMOS%20mir%C3%A1%20los%20resultados",
+  "results.share.url": "http://goo.gl/7Ejllb"
 }
