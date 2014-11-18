@@ -50,7 +50,7 @@
             - var width = Math.round(width*100)/100
             - var s = verys === 1 ? '' : 's'
               span.percent=t('scoring.options.very') + ' ' + width + '% '
-              span.scores #{totalVerys} #{t('vote') + s}
+              span.scores #{verys} #{t('vote') + s}
 
           .scores-somewhats.scores-results
             - var width = census ? (somewhats/census)*100 : 0;

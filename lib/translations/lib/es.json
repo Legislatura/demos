@@ -241,7 +241,12 @@
   "admin-laws-form.title.edit": "Edición de ley",
   "admin-laws-form.label.lawId": "Identificación oficial",
   "admin-laws-form.label.mediaTitle": "Título mediático",
-  "admin-laws-form.label.author": "Autor",
+  "admin-laws-form.label.author": "Autor/a",
+  "admin-laws-form.label.author-picture": "Foto del autor",
+  "admin-laws-form.label.party": "Bloque",
+  "admin-laws-form.label.backgroundColor": "Color de fondo",
+  "admin-laws-form.label.fontColor": "Color de letra",
+  "admin-laws-form.label.picture": "Foto",
   "admin-laws-form.label.source": "Fuente",
   "admin-laws-form.placeholder.source": "http://fuente-de-leyes.org/url-oficial/",
   "admin-laws-form.label.tag": "Comisión",
@@ -391,5 +396,8 @@
   "scoring.value.little": "Este proyecto te interesa <strong>poco</strong>",
   "scoring.value.somewhat": "Este proyecto te interesa <strong>bastante</strong>",
   "scoring.value.very": "Este proyecto te interesa <strong>mucho</strong>",
-  "scoring.total-score": "Puntaje total: {totalScore}"
+  "scoring.total-score": "Puntaje total: {totalScore}",
+
+  "results.share.text.twitter": "Los%203%20proyectos%20fueron%20SELECCIONADOS.%20Desde%20ma%C3%B1ana%2C%20podremos%20DEBATIRLOS%20y%20VOTARLOS%20%23YoVoto%20%23DEMOS%20mir%C3%A1%20los%20resultados",
+  "results.share.url": "http://goo.gl/7Ejllb"
 }
