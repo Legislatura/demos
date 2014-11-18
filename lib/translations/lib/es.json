@@ -267,6 +267,8 @@
   "admin-laws-form.placeholder.staffTitle": "Dejar en blanco para fase 1, completar para fase 2",
   "admin-laws-form.label.phase-one": "Ley de la fase 1",
   "admin-laws-form.label.singular": "Debate en particular",
+  "admin-laws-form.label.order": "Orden en el menú del costado",
+  "admin-laws-form.placeholder.order": "Completar con un número para las leyes de fase 2",
 
   "admin-laws-form.message.public-status": "Esta ley está abierta al público",
   "admin-laws-form.button.make-private": "Despublicar",
