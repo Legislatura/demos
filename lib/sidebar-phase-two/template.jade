@@ -1,4 +1,4 @@
-mixin sidebaritem(law, item, backgroundColor, fontColor)
+mixin sidebaritem(law, item, backgroundColor, fontColor, phaseOne)
   - var voted = citizen.logged() && !!item.voted
     li(data-id=item.id, class=law.id == item.id ? 'active' : '')
       - var classes = []
@@ -7,7 +7,7 @@ mixin sidebaritem(law, item, backgroundColor, fontColor)
       - var styles = backgroundColor ? 'background: ' + backgroundColor + ';' : ''
       - styles += fontColor ? 'color: ' + fontColor + '};' : ''
       - styles += styles != '' ? 'margin-bottom: 40px' : ''
-      a(href='/law/'+item.id, class =classes, style=styles)
+      a(href=phaseOne ? '#' : '/law/' + item.id, class =classes, style=styles)
         span.title= item.mediaTitle
         span.created-by
           //- - if (item.participants.length > 0)
@@ -22,7 +22,7 @@ mixin sidebaritem(law, item, backgroundColor, fontColor)
 nav.sidebar-nav
   #list-container
     ul.nav.navlist
-      +sidebaritem(law.phaseOne, law.phaseOne, law.phaseOne.backgroundColor, law.phaseOne.fontColor)
+      +sidebaritem(law.phaseOne, law.phaseOne, law.phaseOne.backgroundColor, law.phaseOne.fontColor, true)
       - each item in laws
         +sidebaritem(law, item)
   .back.text-center
