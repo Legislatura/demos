@@ -7,7 +7,7 @@ mixin sidebaritem(law, item, backgroundColor, fontColor, phaseOne)
       - var styles = backgroundColor ? 'background: ' + backgroundColor + ';' : ''
       - styles += fontColor ? 'color: ' + fontColor + '};' : ''
       - styles += styles != '' ? 'margin-bottom: 20px;' : ''
-      - styles += styles != '' ? 'cursor: default;' : ''
+      - styles += styles != '' ? 'cursor: default; text-transform: uppercase' : ''
       a(href=phaseOne ? '#' : '/law/' + item.id, class =classes, style=styles)
         span.title= item.mediaTitle
         span.created-by
