@@ -8,14 +8,25 @@
 .carousel
   height 300px
 
+#carousel-footer
+  padding-bottom 30px
+
+  a.skip
+    margin-top 20px
+    cursor pointer
+
 .step1
-  background-color yellow
+  background url('/lib/tutorial/images/tutorial-paso1.gif') no-repeat
+  background-position center
 .step2
-  background-color red
+  background url('/lib/tutorial/images/tutorial-paso2.gif') no-repeat
+  background-position center
 .step3
-  background-color blue
+  background url('/lib/tutorial/images/tutorial-paso3.gif') no-repeat
+  background-position center
 .step4
-  background-color brown
+  background url('/lib/tutorial/images/tutorial-paso4.gif') no-repeat
+  background-position center
 
 .btn-prev, .btn-next
   cursor pointer
@@ -31,9 +42,9 @@
     transition all 0.7s ease
 
 .btn-prev
-  left 20px
+  left 50px
   background url('/lib/tutorial/images/prev.svg') no-repeat
 
 .btn-next
-  right 20px
+  right 50px
   background url('/lib/tutorial/images/next.svg') no-repeat
