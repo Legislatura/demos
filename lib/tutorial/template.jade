@@ -6,15 +6,19 @@
     .row.text-center
       .col-md-offset-2.col-md-8.subtitle
         h3=t('tutorial.subtitle')
-    .row.text-center
+    .row.text-center#carousel-container
       .col-md-2
       .col-md-8
         a.btn-prev(href="#")
         a.btn-next(href="#")
         .carousel
-          .step1 Primer paso. Acá va una imagen.
-          .step2 Segundo paso. Acá va otra imagen.
-          .step3 Tercer paso. Acá va otra imagen más.
-          .step4 Cuarto paso. Acá va otra imagen.
+          .step1
+          .step2
+          .step3
+          .step4
       .col-md-2
-    .row.text-center
+    .row.text-center#carousel-footer
+      .col-md-2
+      .col-md-8
+        a.skip.pull-right Saltar tutorial &gt;&gt;
+      .col-md-2
