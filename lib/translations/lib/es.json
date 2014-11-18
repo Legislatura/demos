@@ -396,5 +396,8 @@
   "scoring.value.little": "Este proyecto te interesa <strong>poco</strong>",
   "scoring.value.somewhat": "Este proyecto te interesa <strong>bastante</strong>",
   "scoring.value.very": "Este proyecto te interesa <strong>mucho</strong>",
-  "scoring.total-score": "Puntaje total: {totalScore}"
+  "scoring.total-score": "Puntaje total: {totalScore}",
+
+  "results.share.text.twitter": "Los%203%20proyectos%20fueron%20SELECCIONADOS.%20Desde%20ma%C3%B1ana%2C%20podremos%20DEBATIRLOS%20y%20VOTARLOS%20%23YoVoto%20%23DEMOS%20mir%C3%A1%20los%20resultados",
+  "results.share.url": "http://goo.gl/7Ejllb"
 }
