@@ -44,6 +44,7 @@ html(lang='en')
         try{Typekit.load();}catch(e){}
       script.
         var csrfToken = '#{csrfToken}';
+      script(type='text/javascript', src='http://www.google.com/recaptcha/api/js/recaptcha_ajax.js')
 
       include includes/remove-hash
 
@@ -54,6 +55,8 @@ html(lang='en')
         header.app-header
         section#content.site-content
           block content
+          .content-container
+          footer.footer-container
         section#browser.site-content
           section.app-content
 

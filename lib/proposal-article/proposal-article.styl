@@ -150,3 +150,82 @@ article.proposal
         background #3498db
       &.google-plus:hover
         background #c0392b
+
+.author-wrapper
+  text-align left
+  margin-bottom 30px
+  .author
+    display inline-block
+    position relative
+    margin 0
+    padding-left 3.6em
+    img
+      display inline-block
+      position absolute
+      left 0
+      top 50%
+      margin-top -1.5em
+      width 3em
+      height 3em
+      border-radius 100%
+    p
+      display inline-block
+      font-size 14px
+      margin 0
+      &:after
+        content '\00a0\00a0/\00a0\00a0'
+      &:last-child:after
+        content ''
+      a
+        color #000
+        text-decoration none
+        border-bottom 1px solid transparent
+        transition all .1s ease-in
+        &:hover
+          color #333
+          border-bottom 1px solid #666
+
+.btn-talk
+  display block
+  padding 0
+  width 25%
+  text-transform none
+  @media screen and (max-width 960px)
+    width 35%
+  @media screen and (max-width 700px)
+    width 75%
+
+a.flaticon.social.btn.btn-link.btn-talk
+  text-transform none
+
+.pic
+  position relative
+  background-size cover
+  background-repeat no-repeat
+  background-position center center
+  span
+    display block
+    padding-top 45%
+
+  @media screen and (max-width 700px)
+    margin-bottom 10px
+
+.desc
+  margin 0 0 .5em 0
+  font-size 1.4em
+  line-height 1.5
+  color #000
+
+.link
+  display inline-block
+  padding-left 2.7em
+  font-size .9em
+  color #000
+  text-transform uppercase
+  text-decoration none
+  border-bottom 1px solid transparent
+  transition all .1s ease-in
+  background url('/lib/bill-proposal/images/clip.svg') no-repeat left .3em
+  &:hover
+    color #333
+    border-bottom 1px solid #666

@@ -149,6 +149,7 @@
   "Email sent" : "Email sent",
   "The validation email was resent.": "The validation email was resent.",
   "Email not validated" : "The email address for this citizen is not validated. We send citizens a welcome email when they sign up. Please check your email (remember to check your spam folder too) and click on the link supplied on the email. Click <a href='/signup/resend-validation-email'>here</a> if you need the welcome email to be resent",
+  "This account has been disabled" : "This account has been disabled",
   "No citizen found with that email address": "No citizen found with that email address",
 
   "Account data": "Account data",
@@ -203,6 +204,7 @@
 
   "proposal-article.article.alert.text": "This is DemocracyOS's public demo.",
   "proposal-article.article.alert.learn-more": "Learn more",
+  "bill-proposal.talk-to-the-author": "Talk to author",
 
   "Remove argument" : "Remove argument",
   "Spam" : "Report as spam",
@@ -239,12 +241,14 @@
   "admin-laws-form.label.summary": "Summary",
   "admin-laws-form.label.closingAt": "Closing at",
   "admin-laws-form.label.votable": "Votable",
+  "admin-laws-form.label.phaseTwo": "Phase 2",
   "admin-laws-form.label.clause-truncation-text": "Clause truncation text",
   "admin-laws-form.button.add-clause": "Add clause",
   "admin-laws-form.message.add-clause-forbidden": "Law must be saved to start adding clauses",
   "admin-laws-form.button.add-link": "Add link",
   "admin-laws-form.message.add-link-forbidden": "Law must be saved before adding links",
   "admin-laws-form.button.submit": "Save",
+  "admin-laws-form.label.party": "Party",
 
   "admin-laws-form.message.public-status": "This law is published to public",
   "admin-laws-form.button.make-private": "Unpublish",

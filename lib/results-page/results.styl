@@ -1,0 +1,76 @@
+#results-container
+  font-family: 'Raleway', sans-serif
+  font-kerning: normal
+
+  h1, h4
+    text-align center
+
+  h1
+    text-transform uppercase
+    font-size: 2em
+
+  .bill-proposal
+    font-size 10px
+    min-height 885px
+    @media screen and (max-width 700px)
+      min-height 725px
+
+  .pic
+    width 100%
+    margin-bottom 12px
+
+  .next, .prev
+    display none
+
+  .scores, .score-selector
+    width 100%
+    margin-left 0px
+    margin-right 0px
+    h2
+      font-size 14px
+
+  .share-links
+    align-items center
+    margin 12px 0
+    @media screen and (max-width 700px)
+      margin 6px 0
+
+    div
+      padding-left 0
+      padding-right 0
+    .share-links-container
+      padding-top 20px
+      padding-bottom 20px
+    .share-message
+      margin-right 0
+      margin-left 0
+      height 34px
+      line-height 34px
+    a
+      background #00708f
+      padding 10px
+      margin-right 10px
+      border-radius 3px
+      color white
+      display inline-block
+      line-height 10px
+      -webkit-transition all 0.3s ease
+      &:hover
+        color white
+        text-decoration none
+      &.facebook:hover
+        background #3b5998
+      &.twitter:hover
+        background #3498db
+      &.google-plus:hover
+        background #c0392b
+
+  .share-message
+    color #00708f
+    font-weight bold
+    //margin-left -3%
+
+  .link-to-law
+    cursor pointer
+// #browser
+//   overflow hidden

@@ -10,6 +10,9 @@
     "slifszyc/user-agent": "0.0.9"
   },
   "locals": [
+    "about",
+    "projects",
+    "results-page",
     "config",
     "body-classes",
     "content-lock",
@@ -24,6 +27,7 @@
     "flaticons",
     "admin",
     "header",
+    "footer",
     "logout",
     "help",
     "404"
