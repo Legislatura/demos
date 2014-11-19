@@ -364,7 +364,7 @@
   "about.paragraph.1.3": "La SELECCIÓN consiste en la presentación de 16 proyectos con estado parlamentario para que los ciudadanos los califiquen según cuánto les interese debatirlos. Los 3 proyectos de ley que registren las mayores calificaciones pasarán a la instancia de DEBATE.",
   "about.paragraph.1.4": "El DEBATE se orientará hacia el tratamiento online de los Proyectos de Ley utilizando una adaptación de la plataforma web DemocracyOS, desarrollada específicamente para la Legislatura.",
   "about.title.2": "Fechas y resultados",
-  "about.paragraph.2.1": "La etapa de <strong>SELECCIÓN</strong> se desarrolla <strong>entre el 5 y el 18 de noviembre</strong>.<br>Le etapa de <strong>DEBATE</strong> se desarrolla <strong>entre el 19 y el 3 de diciembre</strong>.",
+  "about.paragraph.2.1": "La etapa de <strong>SELECCIÓN</strong> se desarrolla <strong>entre el 5 y el 18 de noviembre</strong>.<br>Le etapa de <strong>DEBATE</strong> se desarrolla <strong>entre el 19 de noviembre y el 3 de diciembre</strong>.",
   "about.title.3": "¿Qué es DemocracyOS?",
   "about.paragraph.3.1": "<strong>DemocracyOS</strong> es una plataforma online que le permite a los ciudadanos informarse, debatir y votar proyectos en la búsqueda de estimular los mejores argumentos para llegar a decisiones de forma colectiva.<br><strong>DemocracyOS</strong> se adapta a las necesidades de cualquier organización que necesite difundir, discutir y decidir soluciones para problemas complejos. DemocracyOS es una plataforma de código abierto y puede ser utilizado, modificado y redistribuído libremente.<br><br>Por cualquier duda o consulta, comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>",
 
@@ -393,6 +393,7 @@
   "projects.title.3": "¿Los proyectos que vos querías debatir no fueron seleccionados?",
   "projects.paragraph.3.1": "Si bien esos proyectos no van a tener la oportunidad de recibir tratamiento online por parte de los ciudadanos, todavía tienen estado parlamentario y los bloques que los presentaron están trabajando para que sean aprobados. En la página de <a href=\"/resultados\">resultados</a> podés encontrar formas de comunicarte con los autores.",
   "projects.paragraph.3.2": "Por cualquier duda o consulta, comunicate con nosotros a <a href=\"mailto:demos@legislatura.gov.ar\">demos@legislatura.gov.ar<a>",
+  "projects.how-was-calculated": "¿Cómo fue calculado?",
 
   "scoring.options.title": "¿Cuánto te interesa debatir este proyecto?",
   "scoring.options.nothing": "Nada",
