@@ -15,7 +15,7 @@
           a(href=proposal.authorUrl, target='_blank')=proposal.author
         p
           span=t('admin-laws-form.label.party') + ': '
-          a(href=proposal.partyUrl, target='_blank')=proposal.party
+          a(href=proposal.phaseOne.partyUrl, target='_blank')=proposal.phaseOne.party
         - var isTwitter = proposal.authorUrl && !!~proposal.authorUrl.indexOf('twitter.com')
         - if (isTwitter)
           - var twitter = proposal.authorUrl.split('twitter.com/')[1]

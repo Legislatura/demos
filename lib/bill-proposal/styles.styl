@@ -17,12 +17,17 @@
     span
       color #c9d1d3
 
+
+  .btn-discuss
+    display none
+
   .inner
     clearfix()
     margin-bottom 1em
     padding 1em
     border-radius 3px
     background-color #ebeff0
+    min-height 500px
 
     h1,
     h2
@@ -59,6 +64,7 @@
 
     .author-wrapper
       text-align center
+      min-height 40px
       .author
         display inline-block
         position relative
@@ -179,3 +185,9 @@ bill-proposal-big()
 
 @media screen and (min-width 600px)
   bill-proposal-big()
+
+#homepage
+  .winners
+    .bill-proposal
+      .btn-discuss
+        display block

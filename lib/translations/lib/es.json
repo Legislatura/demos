@@ -197,6 +197,7 @@
   "View the original text": "Ver el texto original",
   "Participant": "Participante",
   "You must be signed in to vote on this law": "Debes estar registrado para poder votar esta ley",
+  "Discuss this bill": "Entrá",
 
   "sidebar.listing{listType}": "Todo",
   "Project": "Proyecto",
@@ -254,12 +255,20 @@
   "admin-laws-form.label.closingAt": "Fecha de cierre",
   "admin-laws-form.label.votable": "Votable",
   "admin-laws-form.label.phaseTwo": "Fase 2",
+  "admin-laws-form.label.winner": "Pasó a la segunda etapa",
   "admin-laws-form.label.clause-truncation-text": "Texto para leer articulado",
   "admin-laws-form.button.add-clause": "Nuevo artículo",
   "admin-laws-form.message.add-clause-forbidden": "La ley debe guardarse antes de agregar artículos",
   "admin-laws-form.button.add-link": "Agregar link",
   "admin-laws-form.button.submit": "Guardar",
   "admin-laws-form.label.party": "Partido",
+  "admin-laws-form.label.intro": "Introducción",
+  "admin-laws-form.label.staffTitle": "Título interno",
+  "admin-laws-form.placeholder.staffTitle": "Dejar en blanco para fase 1, completar para fase 2",
+  "admin-laws-form.label.phase-one": "Ley de la fase 1",
+  "admin-laws-form.label.singular": "Debate en particular",
+  "admin-laws-form.label.order": "Orden en el menú del costado",
+  "admin-laws-form.placeholder.order": "Completar con un número para las leyes de fase 2",
 
   "admin-laws-form.message.public-status": "Esta ley está abierta al público",
   "admin-laws-form.button.make-private": "Despublicar",
@@ -397,6 +406,9 @@
   "scoring.value.somewhat": "Este proyecto te interesa <strong>bastante</strong>",
   "scoring.value.very": "Este proyecto te interesa <strong>mucho</strong>",
   "scoring.total-score": "Puntaje total: {totalScore}",
+
+  "tutorial.title": "DEMOS: La Legislatura se abre",
+  "tutorial.subtitle": "La Legislatura Porteña nos propone a todos los ciudadanos una nueva forma de participar a través de Internet. DEMOS es un canal directo entre los Diputados y vos: tu opinión puede mejorar los proyectos e incidir sobre la decisión de nuestros representantes.",
 
   "results.share.text.twitter": "Los%203%20proyectos%20fueron%20SELECCIONADOS.%20Desde%20ma%C3%B1ana%2C%20podremos%20DEBATIRLOS%20y%20VOTARLOS%20%23YoVoto%20%23DEMOS%20mir%C3%A1%20los%20resultados",
   "results.share.url": "http://goo.gl/7Ejllb"

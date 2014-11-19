@@ -1,0 +1,11 @@
+{
+  "name": "winners",
+  "description": "Collection of winner laws",
+  "locals": [
+    "laws-proto"
+  ],
+  "scripts": [
+    "winners.js"
+  ],
+  "main": "winners.js"
+}

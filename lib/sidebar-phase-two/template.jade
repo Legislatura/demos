@@ -1,0 +1,32 @@
+mixin sidebaritem(law, item, backgroundColor, fontColor, phaseOne)
+  - var voted = citizen.logged() && !!item.voted
+    li(data-id=item.id, class=law.id == item.id ? 'active' : '')
+      - var classes = []
+      - classes.push(voted ? 'voted' : '')
+      - classes.push(!!item.singular ? 'singular' : '')
+      - var styles = backgroundColor ? 'background: ' + backgroundColor + ';' : ''
+      - styles += fontColor ? 'color: ' + fontColor + '};' : ''
+      - styles += styles != '' ? 'margin-bottom: 20px;' : ''
+      - styles += styles != '' ? 'cursor: default; text-transform: uppercase' : ''
+      a(href=phaseOne ? '#' : '/law/' + item.id, class =classes, style=styles)
+        span.title= item.mediaTitle
+        span.created-by
+          //- - if (item.participants.length > 0)
+            //- - var plural = 1 === item.participants.length ? '' : 's'
+            - var plural = true
+            div= item.participants.length + ' ' + t('Participant') + plural
+          - if (item.closingAt)
+            - var closed = item.closingAt && +new Date(item.closingAt) < Date.now()
+            span.time-ago-label= (closed ? t('Closed') : t('Close')) + ' '
+            span.meta-item.meta-timeago.ago(data-time=item.closingAt.toString())
+
+nav.sidebar-nav
+  #list-container
+    ul.nav.navlist
+      +sidebaritem(law.phaseOne, law.phaseOne, law.phaseOne.backgroundColor, law.phaseOne.fontColor, true)
+      - each item in laws
+        +sidebaritem(law, item)
+  .back.text-center
+    a.btn.btn-default(href='/')
+      span.glyphicon.glyphicon-chevron-left
+      =' ' + t('common.back')

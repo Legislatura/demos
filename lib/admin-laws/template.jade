@@ -10,4 +10,4 @@
           a(href="/admin/laws/" + law.id)
             span.law-id=law.lawId
             | #{' - '}
-            span.law-title=law.mediaTitle
+            span.law-title=law.staffTitle || law.mediaTitle

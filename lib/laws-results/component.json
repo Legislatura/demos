@@ -9,11 +9,11 @@
     "citizen",
     "request",
     "render",
-    "stateful"
+    "stateful",
+    "laws-proto"
   ],
   "scripts": [
-    "laws.js",
-    "proto.js"
+    "laws.js"
   ],
   "main": "laws.js"
 }

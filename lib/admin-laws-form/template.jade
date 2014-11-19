@@ -22,53 +22,83 @@
         label= t('admin-laws-form.label.mediaTitle')
         input.form-control(type='text', id="mediaTitle", name='mediaTitle', tabindex=2, placeholder=t('admin-laws-form.label.mediaTitle'), value=law.mediaTitle, validate='required')
       .form-group
+        label= t('admin-laws-form.label.staffTitle')
+        input.form-control(type='text', id="staffTitle", name='staffTitle', tabindex=3, placeholder=t('admin-laws-form.placeholder.staffTitle'), value=law.staffTitle)
+      .form-group
+        label= t('admin-laws-form.label.intro')
+        select.form-control(id='intro', name='intro', tabindex=4)
+          option(value='')=''
+          - each intro in laws
+            - if (intro.id != law.id)
+              option(value=intro.id, selected=law.intro == intro.id)=intro.staffTitle || intro.mediaTitle
+      .form-group
+        label= t('admin-laws-form.label.phase-one')
+        select.form-control(id='phaseOne', name='phaseOne', tabindex=5)
+          option(value='')=''
+          - each winner in winners
+            - if (winner.id != law.id)
+              option(value=winner.id, selected=law.phaseOne ? law.phaseOne.id == winner.id : false)=winner.mediaTitle
+      .form-group
         label= t('admin-laws-form.label.backgroundColor')
-        input.form-control(type='color', id="backgroundColor", name='backgroundColor', tabindex=3, value=law.backgroundColor)
+        input.form-control(type='color', id="backgroundColor", name='backgroundColor', tabindex=6, value=law.backgroundColor)
       .form-group
         label= t('admin-laws-form.label.picture')
-        input.form-control(type='text', id="picture", name='picture', tabindex=4, placeholder='http://sample.com/example.png', value=law.picture, validate='url')
+        input.form-control(type='text', id="picture", name='picture', tabindex=7, placeholder='http://sample.com/example.png', value=law.picture, validate='url')
       .form-group
         label= t('admin-laws-form.label.fontColor')
-        input.form-control(type='color', id="fontColor", name='fontColor', tabindex=5, value=law.fontColor)
+        input.form-control(type='color', id="fontColor", name='fontColor', tabindex=8, value=law.fontColor)
       .form-group
         label= t('admin-laws-form.label.author')
-        input.form-control(type='text', id="lawAuthor", name='lawAuthor', tabindex=6, placeholder='John Doe', value=law.author, validate='author')
+        input.form-control(type='text', id="lawAuthor", name='lawAuthor', tabindex=9, placeholder='John Doe', value=law.author, validate='author')
       .form-group
         label= t('admin-laws-form.label.author-picture') + ' URL'
-        input.form-control(type='text', id="authorPictureUrl", name='authorPictureUrl', tabindex=7, placeholder='http://sample.com/example.png', value=law.authorPictureUrl, validate='url')
+        input.form-control(type='text', id="authorPictureUrl", name='authorPictureUrl', tabindex=10, placeholder='http://sample.com/example.png', value=law.authorPictureUrl, validate='url')
       .form-group
         label= t('admin-laws-form.label.author') + ' URL'
-        input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=8, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=law.authorUrl, validate='url')
+        input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=11, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=law.authorUrl, validate='url')
       .form-group
         label= t('admin-laws-form.label.party')
-        input.form-control(type='text', id="party", name='party', tabindex=9, placeholder=t('admin-laws-form.label.party'), value=law.party)
+        input.form-control(type='text', id="party", name='party', tabindex=12, placeholder=t('admin-laws-form.label.party'), value=law.party)
       .form-group
         label= t('admin-laws-form.label.party') + ' URL'
-        input.form-control(type='text', id="partyUrl", name='partyUrl', tabindex=10, placeholder='http://party.org/', value=law.partyUrl, validate='url')
+        input.form-control(type='text', id="partyUrl", name='partyUrl', tabindex=13, placeholder='http://party.org/', value=law.partyUrl, validate='url')
       .checkbox
         label
           - var votable = !law.id || law.votable
-          input(type='checkbox', id="votable", name='votable', tabindex=11, checked=votable)
+          input(type='checkbox', id="votable", name='votable', tabindex=14, checked=votable)
           = t('admin-laws-form.label.votable')
       .checkbox
         label
           - var phaseTwo = !law.id || law.phaseTwo
-          input(type='checkbox', id="phaseTwo", name='phaseTwo', tabindex=12, checked=phaseTwo)
+          input(type='checkbox', id="phaseTwo", name='phaseTwo', tabindex=15, checked=phaseTwo)
           = t('admin-laws-form.label.phaseTwo')
+      .checkbox
+        label
+          - var winner = !law.id || law.winner
+          input(type='checkbox', id="winner", name='winner', tabindex=16, checked=winner)
+          = t('admin-laws-form.label.winner')
+      .checkbox
+        label
+          - var singular = law.id && law.singular
+          input(type='checkbox', id="singular", name='singular', tabindex=17, checked=singular)
+          = t('admin-laws-form.label.singular')
+      .form-group
+        label= t('admin-laws-form.label.order')
+        input.form-control(type='text', name='order', tabindex=18, placeholder=t('admin-laws-form.placeholder.order'), value=law.order, validate='numeric')
       .form-group
         label= t('admin-laws-form.label.clause-truncation-text')
-        input.form-control(type='text', name='clauseTruncationText', tabindex=13, placeholder=t('read more'), value=law.clauseTruncationText)
+        input.form-control(type='text', name='clauseTruncationText', tabindex=19, placeholder=t('read more'), value=law.clauseTruncationText)
       .form-group
         label= t('admin-laws-form.label.source')
-        input.form-control(type='url', name='source', tabindex=14, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
+        input.form-control(type='url', name='source', tabindex=20, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
       .form-group
         label= t('admin-laws-form.label.tag')
-        select.form-control(name='tag', tabindex=15)
+        select.form-control(name='tag', tabindex=21)
           - each tag in tags
             option(selected= law.tag ? tag.hash === law.tag.hash : false, value=tag.hash)= tag.name
       .form-group
         label= t('admin-laws-form.label.summary')
-        textarea.form-control(name='summary', tabindex=16, validate='required max-length:350')= law.summary
+        textarea.form-control(name='summary', tabindex=22)= law.summary
       .form-group.closingAt
         label= t('admin-laws-form.label.closingAt')
         - var closingAt = ''
@@ -78,11 +108,11 @@
           - var closingAtTime = closingAt.getHours() + ':' + closingAt.getMinutes()
           - closingAt = closingAt.getFullYear() + '/' + (closingAt.getMonth() + 1) + '/' + closingAt.getDate()
         .input-group
-          input.form-control(name='closingAt', tabindex=17, readonly=true, value=closingAt)
+          input.form-control(name='closingAt', tabindex=23, readonly=true, value=closingAt)
           span.input-group-addon.clear-closingAt
             i.glyphicon.glyphicon-remove
         .input-group
-          input.form-control(name='closingAtTime', tabindex=18, value=closingAtTime, placeholder='hh:mm', validate='time')
+          input.form-control(name='closingAtTime', tabindex=24, value=closingAtTime, placeholder='hh:mm', validate='time')
       .form-group
         .law-clauses
           - if (law.clauses && law.clauses.length)
@@ -97,5 +127,5 @@
               include link
         a.add-link.btn.btn-block.btn-info(href='#')= t('admin-laws-form.button.add-link')
         span.add-link-forbidden.hide=t('admin-laws-form.message.add-link-forbidden')
-      .form-group: input.btn.btn-success.btn-block.btn-lg(type='submit', tabindex=19, value=t('admin-laws-form.button.submit'))
+      .form-group: input.btn.btn-success.btn-block.btn-lg(type='submit', tabindex=25, value=t('admin-laws-form.button.submit'))
     a.delete-law.text-danger(href='#', class= law.id ? '' : 'hide')= t('admin-laws-form.delete-law.button.delete')
