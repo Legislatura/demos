@@ -6,27 +6,43 @@
     font-weight normal
 
 .carousel
-  height 300px
 
-#carousel-footer
-  padding-bottom 30px
-
-  a.skip
-    margin-top 20px
-    cursor pointer
-
-.step1
-  background url('/lib/tutorial/images/tutorial-paso1.gif') no-repeat
-  background-position center
-.step2
-  background url('/lib/tutorial/images/tutorial-paso2.gif') no-repeat
-  background-position center
-.step3
-  background url('/lib/tutorial/images/tutorial-paso3.gif') no-repeat
-  background-position center
-.step4
-  background url('/lib/tutorial/images/tutorial-paso4.gif') no-repeat
-  background-position center
+  .step1
+    .hidden-xs
+      height 300px
+      background url('/lib/tutorial/images/tutorial-paso1.gif') no-repeat
+      background-position center
+    .hidden-sm.hidden-md.hidden-lg
+      height 443px
+      background url('/lib/tutorial/images/tutorial-paso1-mobile.gif') no-repeat
+      background-position center
+  .step2
+    .hidden-xs
+      height 300px
+      background url('/lib/tutorial/images/tutorial-paso2.gif') no-repeat
+      background-position center
+    .hidden-sm.hidden-md.hidden-lg
+      height 443px
+      background url('/lib/tutorial/images/tutorial-paso2-mobile.gif') no-repeat
+      background-position center
+  .step3
+    .hidden-xs
+      height 300px
+      background url('/lib/tutorial/images/tutorial-paso3.gif') no-repeat
+      background-position center
+    .hidden-sm.hidden-md.hidden-lg
+      height 443px
+      background url('/lib/tutorial/images/tutorial-paso3-mobile.gif') no-repeat
+      background-position center
+  .step4
+    .hidden-xs
+      height 300px
+      background url('/lib/tutorial/images/tutorial-paso4.gif') no-repeat
+      background-position center
+    .hidden-sm.hidden-md.hidden-lg
+      height 443px
+      background url('/lib/tutorial/images/tutorial-paso4-mobile.gif') no-repeat
+      background-position center
 
 .btn-prev, .btn-next
   cursor pointer
@@ -48,3 +64,11 @@
 .btn-next
   right 50px
   background url('/lib/tutorial/images/next.svg') no-repeat
+
+#carousel-footer
+  padding-bottom 30px
+
+  a.skip
+    margin-top 20px
+    cursor pointer
+
