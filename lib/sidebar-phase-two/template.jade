@@ -9,8 +9,6 @@ mixin sidebaritem(law, item, backgroundColor, fontColor, phaseOne)
       - styles += styles != '' ? 'margin-bottom: 20px;' : ''
       - styles += styles != '' ? 'cursor: default; text-transform: uppercase' : ''
       a(href=phaseOne ? '#' : '/law/' + item.id, class =classes, style=styles)
-        - if (item.singular)
-          span.glyphicon-chevron-right
         span.title= item.mediaTitle
         span.created-by
           //- - if (item.participants.length > 0)
