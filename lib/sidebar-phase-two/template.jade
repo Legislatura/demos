@@ -4,8 +4,8 @@ mixin sidebaritem(law, item, backgroundColor, fontColor, phaseOne)
       - var classes = []
       - classes.push(voted ? 'voted' : '')
       - classes.push(!!item.singular ? 'singular' : '')
-      - var styles = backgroundColor ? 'background: ' + backgroundColor + ';' : ''
-      - styles += fontColor ? 'color: ' + fontColor + '};' : ''
+      - var styles = backgroundColor ? 'background: ' + backgroundColor + ';border-radius: 5px;margin-left: 2px;margin-right: 2px;' : ''
+      - styles += fontColor ? 'color: ' + fontColor + ';' : ''
       - styles += styles != '' ? 'margin-bottom: 20px;' : ''
       - styles += styles != '' ? 'cursor: default; text-transform: uppercase' : ''
       a(href=phaseOne ? '#' : '/law/' + item.id, class =classes, style=styles)
