@@ -5,7 +5,12 @@
     font-size 1.2em
     font-weight normal
 
+#carousel-container
+  padding-bottom 20px
+
 .carousel
+  background-position-y 0px
+
   .btn-lg.skip
     position absolute
     bottom 5
@@ -13,13 +18,13 @@
   .btn-sm.skip
     position absolute
     bottom 5
-    right 30
+    right 20
   .btn-md.skip
     position relative
     top 470px
   .hidden-md
     .skip
-      top 470px
+      top 463px
       position relative
 
   .step1
@@ -29,9 +34,11 @@
       background-position center
       position relative
     .hidden-sm.hidden-md.hidden-lg
-      height 443px
+      height 500px
       background url('/lib/tutorial/images/tutorial-paso1-mobile.gif') no-repeat
       background-position center
+      .carousel .carousel-visible
+        height 500px
   .step2
     .hidden-xs
       height 300px
@@ -39,9 +46,11 @@
       background-position center
       position relative
     .hidden-sm.hidden-md.hidden-lg
-      height 443px
+      height 500px
       background url('/lib/tutorial/images/tutorial-paso2-mobile.gif') no-repeat
       background-position center
+      .carousel .carousel-visible
+        height 500px
   .step3
     .hidden-xs
       height 300px
@@ -49,10 +58,12 @@
       background-position center
       position relative
     .hidden-sm.hidden-md.hidden-lg
-      height 443px
+      height 500px
       background url('/lib/tutorial/images/tutorial-paso3-mobile.gif') no-repeat
       background-position center
       position relative
+      .carousel .carousel-visible
+        height 500px
   .step4
     .hidden-xs
       height 300px
@@ -60,9 +71,14 @@
       background-position center
       position relative
     .hidden-sm.hidden-md.hidden-lg
-      height 443px
+      height 500px
       background url('/lib/tutorial/images/tutorial-paso4-mobile.gif') no-repeat
       background-position center
+      .carousel .carousel-visible
+        height 500px
+
+.carousel .carousel-visible
+  height auto
 
 .btn-prev, .btn-next
   cursor pointer
