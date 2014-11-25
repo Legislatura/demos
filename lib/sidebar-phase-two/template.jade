@@ -1,6 +1,6 @@
 mixin sidebaritem(law, item, backgroundColor, fontColor, phaseOne)
   - var voted = citizen.logged() && !!item.voted
-    li(data-id=item.id, class=law.id == item.id ? 'active' : '')
+    li(data-id=item.id, class=law.id == item.id && !phaseOne ? 'active' : '')
       - var classes = []
       - classes.push(voted ? 'voted' : '')
       - classes.push(!!item.singular ? 'singular' : '')
