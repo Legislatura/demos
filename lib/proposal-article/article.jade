@@ -1,4 +1,8 @@
 - var closed = proposal.closed
+- var isTwitter = proposal.authorUrl && !!~proposal.authorUrl.indexOf('twitter.com')
+- if (isTwitter)
+  - var twitter = proposal.authorUrl.split('twitter.com/')[1]
+
 .inner-container
   article.proposal.commentable-container
     //- .meta-information
@@ -16,9 +20,8 @@
         p
           span=t('admin-laws-form.label.party') + ': '
           a(href=proposal.phaseOne.partyUrl, target='_blank')=proposal.phaseOne.party
-        - var isTwitter = proposal.authorUrl && !!~proposal.authorUrl.indexOf('twitter.com')
         - if (isTwitter)
-          - var twitter = proposal.authorUrl.split('twitter.com/')[1]
+          //- var twitter = proposal.authorUrl.split('twitter.com/')[1]
           - var tweet = 'Hola @' + twitter + '! Quiero decirte algo sobre tu proyecto '
           - tweet = '%23YoVoto ' + encodeURI(tweet)
           - var url = 'http://twitter.com/share?text=' + tweet
@@ -77,5 +80,5 @@
     //- Article share links
     .share-links
       a(target="_blank", href="http://www.facebook.com/sharer.php?u=#{baseUrl}/law/#{proposal.id}").flaticon.social.facebook  
-      a(target="_blank", href="http://twitter.com/share?text=#{proposal.mediaTitle}&url=#{baseUrl}/law/#{proposal.id}").flaticon.social.twitter  
+      a(target="_blank", href="http://twitter.com/share?text=Estamos%20debatiendo%20%22#{proposal.phaseOne.mediaTitle}.%20Particip%C3%A1%20vos%20tambi%C3%A9n%20%23YoVoto%20%40#{twitter}&url=http://demos.legislatura.gov.ar").flaticon.social.twitter  
       a(target="_blank", href="https://plus.google.com/share?url=#{baseUrl}/law/#{proposal.id}").flaticon.social.google-plus 

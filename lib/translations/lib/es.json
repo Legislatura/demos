@@ -7,6 +7,8 @@
   "DemocracyOS": "DemocracyOS",
   "header.logo": "DemocracyOS",
   "header.signin": "Ingresar",
+  "Login": "Ingresar",
+  "Signup": "Registrarse",
   "Login to": "Ingresar a",
   "header.signup": "Registrarse",
   "Signup now": "Regístrate",
@@ -15,6 +17,7 @@
   "header.feedback": "Sugerencias",
   "header.about": "¿Qué es DEMOS?",
   "header.projects": "Los proyectos",
+  "header.tutorial": "¿Cómo funciona?",
 
   "Incorrect password": "Contraseña incorrecta",
   "Incorrect username": "Nombre de usuario incorrecto",
@@ -414,5 +417,9 @@
   "results.share.url": "http://goo.gl/7Ejllb",
 
   "homepage.title": "INFORMATE, DEBATÍ Y VOTÁ",
-  "homepage.subtitle": "Mirá todos los proyectos que se votaron <a href=\"/resultados\">acá</a>"
+  "homepage.subtitle": "Mirá todos los proyectos que se votaron <a href=\"/resultados\">acá</a>",
+
+  "next-law.vote.general": "Votá la ley en general",
+  "next-law.vote.singular": "Votá la ley en particular",
+  "next-law.vote.next-singular": "Votá la siguiente sección"
 }

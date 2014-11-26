@@ -24,8 +24,12 @@
     "images/tutorial-paso1.gif",
     "images/tutorial-paso2.gif",
     "images/tutorial-paso3.gif",
-    "images/tutorial-paso4.gif"
-   ],
+    "images/tutorial-paso4.gif",
+    "images/tutorial-paso1-mobile.gif",
+    "images/tutorial-paso2-mobile.gif",
+    "images/tutorial-paso3-mobile.gif",
+    "images/tutorial-paso4-mobile.gif"
+  ],
   "styles": ["tutorial.styl"],
   "templates": ["template.jade"],
   "scripts": ["tutorial.js", "view.js"],
