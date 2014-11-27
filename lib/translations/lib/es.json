@@ -421,5 +421,12 @@
 
   "next-law.vote.general": "Votá la ley en general",
   "next-law.vote.singular": "Votá la ley en particular",
-  "next-law.vote.next-singular": "Votá la siguiente sección"
+  "next-law.vote.next-singular": "Votá la siguiente sección",
+
+  "notifications.new-reply.hi": "¡Hola {name}!",
+  "notifications.new-reply.subject": "Respondieron a tu argumento en DEMOS!",
+  "notifications.new-reply.paragraph.1": "Tu comentario en { lawPhaseTwoTitle } del proyecto \"{ lawPhaseOneTitle }\" ya tiene una nueva respuesta.",
+  "notifications.new-reply.paragraph.2": "Para continuar el debate, hacé <a href=\"{ url }\" target=\"_blank\">click acá</a>.",
+  "notifications.new-reply.signature": "Equipo DEMOS",
+  "notifications.new-reply.unsubscribe": "¿No querés recibir más estos emails? Desuscribite <a href=\"{ settingsUrl }\" target=\"_blank\">acá</a>."
 }
