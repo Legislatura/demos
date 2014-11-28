@@ -1,4 +1,149 @@
 
+0.8.25a / 2014-11-28
+==================
+
+ * Add navigation between phaseTwo laws of the same phaseOne law with a 'next' button
+ * Add sending email to user when one of their arguments gets replied
+ * Fix tutorial loop. Closes #114.
+ * Fix the order in which mongoose connects to database. Closes #111.
+ * [law] Closed comments on law Introduction.
+ * Changed tutorial header label
+ * Merge branch 'add/navigation-button' into development
+ * Add next button to navigate to the next law on the sidebar
+ * [homepage] Increased min-height on law cards. Closes #112.
+ * [tutorial] Fixed some styles
+ * [tutorial] Fix skip buttons selector
+ * [tutorial] Added skip buttons for last slide and mobile version. Closes #102
+ * Merge branches 'improve-tutorial' and 'development' into improve-tutorial
+ * Merge branch 'development' of github.com:DemocraciaEnRed/demos into development
+ * Changed Twitter message. Closes #110
+ * Merge branch 'development' of https://github.com/DemocraciaEnRed/demos into development
+ * Update es.json with missing translations for login/signup. Fixes #107
+ * [participants] Removed votable condition to show participants box. Closes #104.
+ * [homepage] Make law card title a link. Closes #109.
+ * Merge branch 'fix-sidebar-empty-space' into development
+ * [sidebar] Improved title style
+ * [sidebar] Removed glyphicon-chevron-right from sublaw link.
+ * [sidebar] Remove excessive padding in menu. Closes #103.
+ * [header] Added link to /tutorial. Closes #106.
+ * [tutorial] Logged off users will not see tutorial. Closes #101.
+ * [tutorial] Added mobile images. Closes #100.
+ * Updated texts
+ * [law-api] - Expose singular attribute on GET /api/law/:id
+ * Merge branch 'update/texts-phase2' into development
+ * [translations] - Updated texts for phase 2
+ * Show only phaseTwo bills on /stats
+ * [sidebar] - Bill title is uppercased
+ * [article] - Show phaseOne.party
+ * [sidebar] - Remove uppercas for each tem
+ * [admin-laws-form] - Add missing party inputs
+ * More update son styles for bill-proposal and sidebar
+ * Reduce space from bill title in sidebar
+ * Merge branch 'development' of github.com:DemocraciaEnRed/demos into development
+ * Updates on sidebar
+ * [tutorial] Added cookie to check if user saw tutorial. Also fixes Skip link loop.
+ * Merge branch 'development' of github.com:DemocraciaEnRed/demos into development
+ * [tutorial] Set images and Skip link
+ * Merge branch 'update/results-page' into development
+ * Performance improvementes querying for lees objects
+ * [models:law] - Add index for winner attribute
+ * Merge branch 'resultados' into update/results-page
+ * [tutorial] Added images
+ * [db-api] Added some indexes for laws collection
+ * [bill-proposal:styles] - Add more min-height on results page
+ * Fix translations for sharing results
+ * Fix verys results votes text
+ * Merge branch 'add/sidebar-order' into development
+ * Add order attribute for phaseTwo laws to get sorted on sidebar by it
+ * Add subtitle on homepage. Add sorting for winners
+ * Remove missing text paragraph
+ * [bill-proposal:styles] - Add more min-height
+ * [db-api:law] - Don't return deleted laws for sidebar
+ * Merge branch 'add/results-updated-page' into development
+ * [tutorial] - Render tutorial inside correct container
+ * Add performance schema in /results page
+ * Merge branch 'development' of github.com:DemocraciaEnRed/demos into development
+ * Add separate endpoint to get the phase-two law to load its phaseOne only needed attributes
+ * Add missing translations
+ * [admin-laws-form] - Add missing fields due to merge with DemocracyOS
+ * [db-api:law] - Results filter non deleted laws
+ * Fix template bug
+ * Update /results to boots server performance
+ * [tutorial] Removed deprecated link
+ * Homepage: redirect to Tutorial if user didn't see it
+ * Merge branch 'development' of github.com:DemocraciaEnRed/demos into development
+ * Merged with add-tutorial-page branch
+ * Fixed styles
+ * Add phaseOne bill proposal title on sidebar
+ * Updated texts
+ * [bill-proposal] - Update texts and styles
+ * Improved prev and next buttons
+ * Merge branch 'fix/admin-law-form' into development
+ * [admin-law-form] - Add missing attributes
+ * [admin-law-form] - Fix setting the phaseOne attribute on save
+ * Merge branch 'add/back-button' into development
+ * [sidebar-phase-two] - Add back button
+ * Update results texts
+ * Merge branch 'update/texts' into development
+ * Update results texts and some styles
+ * Merge branch 'add/particular-discussion' into development
+ * Add singular attribute to check those projects to be treated as singular
+ * Merge branch 'add/phase-one-phase-two-laws-relationship' into development
+ * Add sidebar. Add phaseOne attribute.
+ * Tutorial layout, slider and styles
+ * Fix setting intro in the admin. Add staffTitle attribute to law to select the intro more easily
+ * Add winner bill-proposals on homepage
+ * Starting with the new homepage
+ * Add winners and loosers. Add a 'winner' attribute to law and add endpoints to get /api/law/winners and /api/law/losers
+ * Redirect from / to /tutorial if citizen didn't see the Tutorial
+ * Add min height for .content-container to display loading-lock correctly
+ * Add min height for .content-container to display loading-lock correctly
+ * Shuffle nexttime laws on /results
+ * Add height 100% to show correctly the loading lock
+ * Add height 100% to show correctly the loading lock
+ * Fix bill-proposal height on /summary
+ * Fix bill-proposal height on /summary
+ * Fix bill-proposal height on /summary
+ * Fix redirecting to /results on / and /law/:id
+ * Add intro attribute to law model
+ * Added sawTutorial flag to citizen model
+ * Merge branch 'add/footer' into development
+ * [footer] - Add footer to all pages. Closes #90
+ * Created Tutorial scaffolding
+ * Merge branch 'development' of github.com:DemocraciaEnRed/demos into development
+ * Law redirects to results page. Closes #84
+ * Merge branch 'development' of github.com:DemocraciaEnRed/demos into development
+ * Merge branch 'add/recaptcha' into development
+ * [signup] - Add recaptcha. Closes #96
+ * Merge branch 'development' into add/recaptcha
+ * Removed closing date on laws. Closes #97
+ * Fixed results-page dependency on boot
+ * Add results-page component
+ * Merge branch 'remove/learn-more-section' into development
+ * [proposal-article:template] - Remove 'learn more' section. Closes #98
+ * Forgotten debugger; statement
+ * Merge branch 'add/results-page' into development
+ * Add results page. Add /projects page. Close #82
+ * Removed tag badge
+ * Added author pill. Closes #91.
+ * Merge branch 'development' into add/results-page
+ * Merge branch 'add-phase-two-flag' into development
+ * Merge branch 'remove/side-comments' into development
+ * [side-comments] - Remove side comments #92
+ * Added phase two flag. Closes #87.
+ * Merge branch 'update/sidebar-custom-styling' into development
+ * [sidebar-item] - Indent articles' sections #94
+ * Removed filters. Closes #93.
+ * [sidebar-item] - Remove icons from sidebar #94
+ * Fix about cover and question mark images being not found
+ * Merge branch 'add/about' into development
+ * [about] - Add about page back
+ * Merge branch 'release-0.8.25' into development
+ * Merge branch 'master' of github.com:DemocracyOS/app into release-0.8.25
+ * Rewrite development with phase2
+ * Release 0.8.25
+ * [citizen] - Add preventing disabled accounts to singin #466
+
 0.8.25 / 2014-11-07
 ==================
 
