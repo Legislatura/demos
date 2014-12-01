@@ -1,4 +1,10 @@
 
+0.8.25b / 2014-12-01
+==================
+
+ * [tutorial] - Update tutorial to show a video instead of the carousel slider
+ * [resultados] Remove links in law titles. Closes #116.
+
 0.8.25a / 2014-11-28
 ==================
 
