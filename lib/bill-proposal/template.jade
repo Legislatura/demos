@@ -7,8 +7,12 @@
 
 .bill-proposal(data-id=law.id)
   .inner
-    a.law-title-link(href='/law/#{law.intro}')
-      h2.law-title(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
+    if (law.intro)
+      a.law-title-link(href='/law/#{law.intro}')
+        h2.law-title(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
+    else
+      a.law-title-link
+        h2.law-title(style='background-color: #{law.backgroundColor}; color: #{law.fontColor}')=law.mediaTitle
     .author-wrapper
       .author
         a(href='#{law.authorUrl}', target='_blank')
