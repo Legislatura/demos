@@ -1,4 +1,9 @@
 
+0.8.25d / 2014-12-02
+==================
+
+ * [models:citizen] - Update notifications.replies attribute to be required
+
 0.8.25c / 2014-12-02
 ==================
 
