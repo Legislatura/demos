@@ -9,6 +9,15 @@
     //-   a.meta-item.meta-location(href="#") Buenos Aires, Argentina
     //-   small.meta-item.meta-timeago 10 days left
 
+    .meta-information
+      p
+        i.icon-time
+        - if (proposal.closingAt)
+          span.time-ago-label= (closed ? t('Closed') : t('Close')) + " "
+          span.meta-item.meta-timeago.ago(data-time=proposal.closingAt.toString())
+        - else
+          span.meta-item.meta-timeago= t('Unknown closing date')
+
     h1=proposal.mediaTitle
     .author-wrapper
       .author
