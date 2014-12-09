@@ -1,4 +1,9 @@
 
+0.8.25f / 2014-12-09
+==================
+
+ * Add exposing and showing closingAt law date
+
 0.8.25e / 2014-12-05
 ==================
 
